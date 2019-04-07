@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 
+let APP_BACKGROUND_COLOR = UIColor.blue
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -17,6 +19,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let homeViewController = HomeViewController(backgroudColor: APP_BACKGROUND_COLOR)
+       
+        window!.rootViewController = homeViewController
+        
+        // https://developer.apple.com/documentation/uikit/uiwindow/1621601-makekeyandvisible
+        window!.makeKeyAndVisible()
         return true
     }
 
