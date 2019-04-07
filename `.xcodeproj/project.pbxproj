@@ -11,7 +11,6 @@
 		5C2D47612259FED700EB9EBB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47602259FED700EB9EBB /* HomeViewController.swift */; };
 		5C2D47672259FED700EB9EBB /* Stopwatch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47652259FED700EB9EBB /* Stopwatch.xcdatamodeld */; };
 		5C2D47692259FEDA00EB9EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2D47682259FEDA00EB9EBB /* Assets.xcassets */; };
-		5C2D476C2259FEDA00EB9EBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C2D476A2259FEDA00EB9EBB /* LaunchScreen.storyboard */; };
 		5C2D47772259FEDA00EB9EBB /* StopwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47762259FEDA00EB9EBB /* StopwatchTests.swift */; };
 		5C2D47822259FEDA00EB9EBB /* StopwatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47812259FEDA00EB9EBB /* StopwatchUITests.swift */; };
 /* End PBXBuildFile section */
@@ -39,7 +38,6 @@
 		5C2D47602259FED700EB9EBB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5C2D47662259FED700EB9EBB /* Stopwatch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stopwatch.xcdatamodel; sourceTree = "<group>"; };
 		5C2D47682259FEDA00EB9EBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5C2D476B2259FEDA00EB9EBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C2D476D2259FEDA00EB9EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C2D47722259FEDA00EB9EBB /* StopwatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopwatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C2D47762259FEDA00EB9EBB /* StopwatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchTests.swift; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 				5C2D475E2259FED700EB9EBB /* AppDelegate.swift */,
 				5C2D47602259FED700EB9EBB /* HomeViewController.swift */,
 				5C2D47682259FEDA00EB9EBB /* Assets.xcassets */,
-				5C2D476A2259FEDA00EB9EBB /* LaunchScreen.storyboard */,
 				5C2D476D2259FEDA00EB9EBB /* Info.plist */,
 				5C2D47652259FED700EB9EBB /* Stopwatch.xcdatamodeld */,
 			);
@@ -229,7 +226,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C2D476C2259FEDA00EB9EBB /* LaunchScreen.storyboard in Resources */,
 				5C2D47692259FEDA00EB9EBB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,17 +287,6 @@
 			targetProxy = 5C2D477E2259FEDA00EB9EBB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		5C2D476A2259FEDA00EB9EBB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5C2D476B2259FEDA00EB9EBB /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5C2D47842259FEDA00EB9EBB /* Debug */ = {
