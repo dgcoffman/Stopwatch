@@ -37,11 +37,11 @@ jobs:
             - image: dantoml/swiftlint:latest
         steps:
             - checkout
-            - run: swiftlint lint Stopwatch StopwatchTests StopwatchUITests --reporter junit | tee result.xml
+            - run: mkdir test-results test-results/swiftlint && swiftlint lint Stopwatch StopwatchTests StopwatchUITests --reporter junit | tee test-results/swiftlint/result.xml
             - store_artifacts:
-                path: result.xml
+                path: test-results
             - store_test_results:
-                path: result.xml
+                path: test-results
 
 workflows:
     version: 2
