@@ -8,30 +8,16 @@
 
 import UIKit
 
-let TIME_INTERVAL = 0.001
+let DEFAULT_TIME_INTERVAL = 0.001
 
 class HomeViewController: UIViewController {
-    var timer: Timer?
-    
-    var isRunning = false {
-        didSet {
-            startStopButton.setTitle(isRunning ? "Stop" : "Start", for: .normal)
-            startStopButton.removeTarget(nil, action: nil, for: .allEvents)
-            startStopButton.addTarget(self, action: isRunning ? #selector(stopTimer) : #selector(startTimer), for: .touchUpInside)
-        }
-    }
-    
-    var elapsed: Double = 0 {
-        didSet {
-            self.elapsedLabel.text = getElapsedString()
-        }
-    }
+    let stopwatch: Stopwatch;
     
     let startStopButton: UIButton = {
         let button = UIButton(type: UIButton.ButtonType.system)
         button.frame = CGRect(x: 100, y: 0, width: 300, height: 120)
         button.setTitle("Start", for: .normal)
-        button.addTarget(self, action: #selector(startTimer), for: .touchUpInside)
+        button.addTarget(self, action: #selector(startStopwatch), for: .touchUpInside)
         return button
     }()
     
@@ -39,7 +25,7 @@ class HomeViewController: UIViewController {
         let button = UIButton(type: UIButton.ButtonType.system)
         button.frame = CGRect(x: 100, y: 200, width: 300, height: 120)
         button.setTitle("Reset", for: .normal)
-        button.addTarget(self, action: #selector(resetTimer), for: .touchUpInside)
+        button.addTarget(self, action: #selector(resetStopwatch), for: .touchUpInside)
         return button
     }()
     
@@ -49,8 +35,58 @@ class HomeViewController: UIViewController {
         return label;
     }()
     
-    func getElapsedString() -> String {
+    // this 100% sucks
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    convenience init(interval: Double = DEFAULT_TIME_INTERVAL) {
+        let stopwatch = Stopwatch(interval: interval)
+        self.init(stopwatch: stopwatch)
+    }
+    
+    init(stopwatch: Stopwatch) {
+        self.stopwatch = stopwatch
+        super.init(nibName: nil, bundle: nil) // this sucks
+        
+        stopwatch.onStart = handleStart
+        stopwatch.onStop = handleStop
+        stopwatch.onTick = handleTick
+    }
+    
+    func replaceButtonTarget(withAction action: Selector) {
+        startStopButton.removeTarget(nil, action: nil, for: .allEvents)
+        startStopButton.addTarget(self, action: action, for: .touchUpInside)
+    }
+    
+    func handleStart() {
+        replaceButtonTarget(withAction: #selector(stopStopwatch))
+        startStopButton.setTitle("Stop", for: .normal)
+    }
+    
+    func handleStop() {
+        replaceButtonTarget(withAction: #selector(startStopwatch))
+        startStopButton.setTitle("Start", for: .normal)
+    }
+    
+    func getElapsedString(elapsed: Double) -> String {
         return String(format:"%.2f", elapsed)
+    }
+    
+    func handleTick(elapsed: Double) {
+        elapsedLabel.text = getElapsedString(elapsed: elapsed)
+    }
+    
+    @objc func startStopwatch() {
+        stopwatch.start()
+    }
+    
+    @objc func stopStopwatch() {
+        stopwatch.stop()
+    }
+    
+    @objc func resetStopwatch() {
+        stopwatch.reset()
     }
     
     func initBackground() {
@@ -72,25 +108,5 @@ class HomeViewController: UIViewController {
         view.addSubview(startStopButton)
         view.addSubview(resetButton)
         view.addSubview(elapsedLabel)
-    }
-    
-    @objc func startTimer() {
-        self.timer = Timer(timeInterval: TIME_INTERVAL, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
-        RunLoop.current.add(self.timer!, forMode: RunLoop.Mode.common)
-        self.isRunning = true
-    }
-    
-    @objc func stopTimer() {
-        self.isRunning = false
-        self.timer?.invalidate()
-    }
-    
-    @objc func resetTimer() {
-        self.elapsed = 0;
-    }
-    
-    // @objc instructs Swift to make this method available to Objective-C
-    @objc func fireTimer(timer: Timer) {
-        self.elapsed += TIME_INTERVAL
     }
 }

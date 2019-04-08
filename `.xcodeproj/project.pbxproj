@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C01570B225B385D00260B2B /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C01570A225B385D00260B2B /* Stopwatch.swift */; };
 		5C2D475F2259FED700EB9EBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D475E2259FED700EB9EBB /* AppDelegate.swift */; };
 		5C2D47612259FED700EB9EBB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47602259FED700EB9EBB /* HomeViewController.swift */; };
 		5C2D47672259FED700EB9EBB /* Stopwatch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47652259FED700EB9EBB /* Stopwatch.xcdatamodeld */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C01570A225B385D00260B2B /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		5C2D475B2259FED700EB9EBB /* Stopwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stopwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C2D475E2259FED700EB9EBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C2D47602259FED700EB9EBB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				5C2D47682259FEDA00EB9EBB /* Assets.xcassets */,
 				5C2D476D2259FEDA00EB9EBB /* Info.plist */,
 				5C2D47652259FED700EB9EBB /* Stopwatch.xcdatamodeld */,
+				5C01570A225B385D00260B2B /* Stopwatch.swift */,
 			);
 			path = Stopwatch;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				5C2D47612259FED700EB9EBB /* HomeViewController.swift in Sources */,
 				5C2D47672259FED700EB9EBB /* Stopwatch.xcdatamodeld in Sources */,
 				5C2D475F2259FED700EB9EBB /* AppDelegate.swift in Sources */,
+				5C01570B225B385D00260B2B /* Stopwatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
