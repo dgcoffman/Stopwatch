@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-let APP_BACKGROUND_COLOR = UIColor.blue
+let APP_BACKGROUND_COLOR = UIColor.white
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
