@@ -12,3 +12,4 @@ TODO
   - [ ] Write comments and generate documentation with Jazzy
   - [ ] Animate the numbers moving
   - [ ] Add lap times
+  - [ ] Bring in fastlane and CircleCI
