@@ -1,14 +1,18 @@
 //: A UIKit based Playground for presenting user interface
-  
+
 import UIKit
 import PlaygroundSupport
 
 let blue = #colorLiteral(red: 0.0862745098, green: 0.3215686275, blue: 0.9411764706, alpha: 1)
 let white = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
 
-let shadowColor = UIColor( red: CGFloat(10/255.0), green: CGFloat(80/255.0), blue: CGFloat(180/255.0), alpha: CGFloat(1.0) )
+let shadowColor = UIColor(
+    red: CGFloat(10/255.0),
+    green: CGFloat(80/255.0),
+    blue: CGFloat(180/255.0),
+    alpha: CGFloat(1.0) )
 
-class MyViewController : UIViewController {
+class MyViewController: UIViewController {
     override func loadView() {
         let view = UIView()
         view.backgroundColor = .white
@@ -21,7 +25,7 @@ class MyViewController : UIViewController {
         label.shadowColor = shadowColor
         label.shadowOffset = CGSize(width: 2, height: 2)
         label.font = UIFont(name: "AvenirNext-DemiBold", size: 64)!
-        
+
         let button = UIButton(type: UIButton.ButtonType.roundedRect)
         button.frame = CGRect(x: 10, y: 20, width: 240, height: 100)
         button.setTitle("Start", for: .normal)
@@ -29,7 +33,7 @@ class MyViewController : UIViewController {
         button.backgroundColor = blue
         button.titleLabel?.font = UIFont(name: "AvenirNext-DemiBold", size: 24)!
         button.setTitleColor(white, for: .normal)
-        
+
         view.addSubview(label)
         view.addSubview(button)
         self.view = view
