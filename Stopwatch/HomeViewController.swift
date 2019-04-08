@@ -74,7 +74,7 @@ class HomeViewController: UIViewController {
         startStopButton.setTitle("Start", for: .normal)
     }
     
-    func getSubSeconds(elapsed: Double) -> String {
+    func getSubSeconds(elapsed: TimeInterval) -> String {
         let fractionalPart = elapsed.truncatingRemainder(dividingBy: 1)
         let displayString = String(format:"%.03f", fractionalPart)
         let start = displayString.index(displayString.startIndex, offsetBy: 2)
@@ -83,7 +83,7 @@ class HomeViewController: UIViewController {
         return String(displayString[range])
     }
     
-    func getElapsedString(elapsed: Double) -> String {
+    func getElapsedString(elapsed: TimeInterval) -> String {
         let totalSeconds = Int(floor(elapsed))
         
         let minutes = (totalSeconds / 60) % 60
@@ -93,7 +93,7 @@ class HomeViewController: UIViewController {
         return String(format:"%02d:%02d:%@", minutes, seconds, subSeconds)
     }
     
-    func handleTick(elapsed: Double) {
+    func handleTick(elapsed: TimeInterval) {
         elapsedLabel.text = getElapsedString(elapsed: elapsed)
     }
     

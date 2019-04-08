@@ -12,13 +12,13 @@ func noop() {}
 func oneParamNoop<T>(value: T) {}
 
 class Stopwatch {
-    let interval: Double
+    let interval: TimeInterval
     var timer: Timer?
     var onStart: () -> Void = noop
     var onStop: () -> Void = noop
     var onTick: (Double) -> Void = oneParamNoop
     
-    var elapsed: Double = 0 {
+    var elapsed: TimeInterval = 0 {
         didSet {
             onTick(elapsed)
         }
