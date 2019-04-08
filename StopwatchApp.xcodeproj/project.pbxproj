@@ -265,7 +265,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5C2D47562259FED700EB9EBB /* Build configuration list for PBXProject "`" */;
+			buildConfigurationList = 5C2D47562259FED700EB9EBB /* Build configuration list for PBXProject "StopwatchApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -689,7 +689,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5C2D47562259FED700EB9EBB /* Build configuration list for PBXProject "`" */ = {
+		5C2D47562259FED700EB9EBB /* Build configuration list for PBXProject "StopwatchApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C2D47842259FEDA00EB9EBB /* Debug */,

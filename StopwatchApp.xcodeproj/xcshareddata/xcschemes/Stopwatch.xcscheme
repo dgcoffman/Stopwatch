@@ -17,7 +17,7 @@
                BlueprintIdentifier = "5C2D475A2259FED700EB9EBB"
                BuildableName = "Stopwatch.app"
                BlueprintName = "Stopwatch"
-               ReferencedContainer = "container:`.xcodeproj">
+               ReferencedContainer = "container:StopwatchApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "5C2D47712259FEDA00EB9EBB"
                BuildableName = "StopwatchTests.xctest"
                BlueprintName = "StopwatchTests"
-               ReferencedContainer = "container:`.xcodeproj">
+               ReferencedContainer = "container:StopwatchApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -45,7 +45,7 @@
                BlueprintIdentifier = "5C2D477C2259FEDA00EB9EBB"
                BuildableName = "StopwatchUITests.xctest"
                BlueprintName = "StopwatchUITests"
-               ReferencedContainer = "container:`.xcodeproj">
+               ReferencedContainer = "container:StopwatchApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,7 +55,7 @@
             BlueprintIdentifier = "5C2D475A2259FED700EB9EBB"
             BuildableName = "Stopwatch.app"
             BlueprintName = "Stopwatch"
-            ReferencedContainer = "container:`.xcodeproj">
+            ReferencedContainer = "container:StopwatchApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -78,7 +78,7 @@
             BlueprintIdentifier = "5C2D475A2259FED700EB9EBB"
             BuildableName = "Stopwatch.app"
             BlueprintName = "Stopwatch"
-            ReferencedContainer = "container:`.xcodeproj">
+            ReferencedContainer = "container:StopwatchApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -97,7 +97,7 @@
             BlueprintIdentifier = "5C2D475A2259FED700EB9EBB"
             BuildableName = "Stopwatch.app"
             BlueprintName = "Stopwatch"
-            ReferencedContainer = "container:`.xcodeproj">
+            ReferencedContainer = "container:StopwatchApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

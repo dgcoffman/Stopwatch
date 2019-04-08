@@ -3,8 +3,6 @@ import Nimble
 
 @testable import Stopwatch
 
-
-
 class StopWatchSpec: QuickSpec {
     override func spec() {
         describe("Stopwatch") {
