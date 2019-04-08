@@ -16,6 +16,7 @@
 		5C2D47822259FEDA00EB9EBB /* StopwatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47812259FEDA00EB9EBB /* StopwatchUITests.swift */; };
 		5C48609C225B538000F0424F /* StyleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C48609B225B538000F0424F /* StyleConstants.swift */; };
 		5C48609E225BC4D400F0424F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5C48609D225BC4D400F0424F /* README.md */; };
+		5C4860A1225BC58500F0424F /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4860A0225BC58500F0424F /* Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		5C2D47832259FEDA00EB9EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C48609B225B538000F0424F /* StyleConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleConstants.swift; sourceTree = "<group>"; };
 		5C48609D225BC4D400F0424F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5C4860A0225BC58500F0424F /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		5C2D475D2259FED700EB9EBB /* Stopwatch */ = {
 			isa = PBXGroup;
 			children = (
+				5C48609F225BC57000F0424F /* UI Components */,
 				5C01570C225B3E8C00260B2B /* Prototypes.playground */,
 				5C2D475E2259FED700EB9EBB /* AppDelegate.swift */,
 				5C2D47602259FED700EB9EBB /* HomeViewController.swift */,
@@ -131,6 +134,14 @@
 				5C2D47832259FEDA00EB9EBB /* Info.plist */,
 			);
 			path = StopwatchUITests;
+			sourceTree = "<group>";
+		};
+		5C48609F225BC57000F0424F /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				5C4860A0225BC58500F0424F /* Button.swift */,
+			);
+			path = "UI Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C2D47612259FED700EB9EBB /* HomeViewController.swift in Sources */,
+				5C4860A1225BC58500F0424F /* Button.swift in Sources */,
 				5C2D47672259FED700EB9EBB /* Stopwatch.xcdatamodeld in Sources */,
 				5C48609C225B538000F0424F /* StyleConstants.swift in Sources */,
 				5C2D475F2259FED700EB9EBB /* AppDelegate.swift in Sources */,

@@ -13,26 +13,14 @@ let DEFAULT_TIME_INTERVAL = 0.001
 class HomeViewController: UIViewController {
     let stopwatch: Stopwatch;
     
-    let startStopButton: UIButton = {
-        let button = UIButton(type: UIButton.ButtonType.system)
-        button.setTitle("Start", for: .normal)
-        button.setTitleColor(Color.white, for: .normal)
-        button.layer.cornerRadius = 4
-        button.backgroundColor = Color.blue
-        button.titleLabel?.font = UIFont(name: "AvenirNext-DemiBold", size: 24)!
-        
+    let startStopButton: Button = {
+        let button = Button(text: "Start")
         button.addTarget(self, action: #selector(startStopwatch), for: .touchUpInside)
         return button
     }()
     
-    let resetButton: UIButton = {
-        let button = UIButton(type: UIButton.ButtonType.system)
-        button.setTitle("Reset", for: .normal)
-        button.setTitleColor(Color.white, for: .normal)
-        button.layer.cornerRadius = 4
-        button.backgroundColor = Color.blue
-        button.titleLabel?.font = UIFont(name: "AvenirNext-DemiBold", size: 24)!
-        
+    let resetButton: Button = {
+        let button = Button(text: "Reset")
         button.addTarget(self, action: #selector(resetStopwatch), for: .touchUpInside)
         return button
     }()
