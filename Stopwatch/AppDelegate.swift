@@ -9,8 +9,6 @@
 import UIKit
 import CoreData
 
-let APP_BACKGROUND_COLOR = UIColor.white
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -21,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        let homeViewController = HomeViewController(backgroudColor: APP_BACKGROUND_COLOR)
+        let homeViewController = HomeViewController()
        
         window!.rootViewController = homeViewController
         
