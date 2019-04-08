@@ -11,16 +11,16 @@ import UIKit
 let DEFAULT_TIME_INTERVAL = 0.001
 
 class HomeViewController: UIViewController {
-    let stopwatch: Stopwatch;
-    let elapsedLabel = ElapsedTimeDisplay()
+    private let stopwatch: Stopwatch;
+    private let elapsedLabel = ElapsedTimeDisplay()
     
-    let startStopButton: Button = {
+    private let startStopButton: Button = {
         let button = Button(text: "Start")
         button.addTarget(self, action: #selector(startStopwatch), for: .touchUpInside)
         return button
     }()
     
-    let resetButton: Button = {
+    private let resetButton: Button = {
         let button = Button(text: "Reset")
         button.addTarget(self, action: #selector(resetStopwatch), for: .touchUpInside)
         return button
@@ -44,22 +44,22 @@ class HomeViewController: UIViewController {
         stopwatch.onTick = handleTick
     }
     
-    func replaceButtonTarget(withAction action: Selector) {
+    private func replaceButtonTarget(withAction action: Selector) {
         startStopButton.removeTarget(nil, action: nil, for: .allEvents)
         startStopButton.addTarget(self, action: action, for: .touchUpInside)
     }
     
-    func handleStart() {
+    private func handleStart() {
         replaceButtonTarget(withAction: #selector(stopStopwatch))
         startStopButton.setTitle("Stop", for: .normal)
     }
     
-    func handleStop() {
+    private func handleStop() {
         replaceButtonTarget(withAction: #selector(startStopwatch))
         startStopButton.setTitle("Start", for: .normal)
     }
     
-    func handleTick(elapsed: TimeInterval) {
+    private func handleTick(elapsed: TimeInterval) {
         elapsedLabel.elapsed = elapsed
     }
     
@@ -75,7 +75,7 @@ class HomeViewController: UIViewController {
         stopwatch.reset()
     }
     
-    func initBackground() {
+    private func initBackground() {
         let gradientStartColor = UIColor( red: CGFloat(10/255.0), green: CGFloat(80/255.0), blue: CGFloat(180/255.0), alpha: CGFloat(1.0) ).cgColor
         
         let gradientEndColor = gradientStartColor.copy(alpha: 0.6)
