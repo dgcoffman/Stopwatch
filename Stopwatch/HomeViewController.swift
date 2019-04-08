@@ -53,9 +53,22 @@ class HomeViewController: UIViewController {
         return String(format:"%.2f", elapsed)
     }
     
+    func initBackground() {
+        let gradientStartColor = UIColor( red: CGFloat(10/255.0), green: CGFloat(80/255.0), blue: CGFloat(180/255.0), alpha: CGFloat(1.0) ).cgColor
+        
+        let gradientEndColor = gradientStartColor.copy(alpha: 0.9)
+        
+        let gradient = CAGradientLayer()
+        gradient.frame = view.bounds
+        gradient.colors = [gradientStartColor, gradientEndColor!]
+        view.layer.insertSublayer(gradient, at: 0)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.white
+        
+        initBackground()
+        
         view.addSubview(startStopButton)
         view.addSubview(resetButton)
         view.addSubview(elapsedLabel)
