@@ -5,7 +5,7 @@ iOS Stopwatch
 TODO
 
   - [x] Create a re-usable Button that derives from UIButton
-  - [ ] Create a re-usable ElapsedTimeDisplay that encapsulates rendering a TimeInterval
+  - [x] Create a re-usable ElapsedTimeDisplay that encapsulates rendering a TimeInterval
   - [x] Position everything with UIStackView / layout anchors
   - [ ] Unit test everything with Quick
   - [ ] Bring in SwiftLift

@@ -17,6 +17,7 @@
 		5C48609C225B538000F0424F /* StyleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C48609B225B538000F0424F /* StyleConstants.swift */; };
 		5C48609E225BC4D400F0424F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5C48609D225BC4D400F0424F /* README.md */; };
 		5C4860A1225BC58500F0424F /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4860A0225BC58500F0424F /* Button.swift */; };
+		5C4860A3225BCD3600F0424F /* ElapsedTimeDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4860A2225BCD3600F0424F /* ElapsedTimeDisplay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		5C48609B225B538000F0424F /* StyleConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleConstants.swift; sourceTree = "<group>"; };
 		5C48609D225BC4D400F0424F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5C4860A0225BC58500F0424F /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		5C4860A2225BCD3600F0424F /* ElapsedTimeDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElapsedTimeDisplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				5C4860A0225BC58500F0424F /* Button.swift */,
+				5C4860A2225BCD3600F0424F /* ElapsedTimeDisplay.swift */,
 			);
 			path = "UI Components";
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				5C2D47672259FED700EB9EBB /* Stopwatch.xcdatamodeld in Sources */,
 				5C48609C225B538000F0424F /* StyleConstants.swift in Sources */,
 				5C2D475F2259FED700EB9EBB /* AppDelegate.swift in Sources */,
+				5C4860A3225BCD3600F0424F /* ElapsedTimeDisplay.swift in Sources */,
 				5C01570B225B385D00260B2B /* Stopwatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

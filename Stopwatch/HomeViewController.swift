@@ -12,6 +12,7 @@ let DEFAULT_TIME_INTERVAL = 0.001
 
 class HomeViewController: UIViewController {
     let stopwatch: Stopwatch;
+    let elapsedLabel = ElapsedTimeDisplay()
     
     let startStopButton: Button = {
         let button = Button(text: "Start")
@@ -25,18 +26,6 @@ class HomeViewController: UIViewController {
         return button
     }()
     
-    let elapsedLabel: UILabel = {
-        let label = UILabel();
-        
-        label.textColor = Color.white
-        label.shadowColor = .black
-        label.shadowOffset = CGSize(width: 2, height: 2)
-        label.font = UIFont(name: "AvenirNext-DemiBold", size: 72)!
-        
-        return label;
-    }()
-    
-    // this 100% sucks
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -70,27 +59,8 @@ class HomeViewController: UIViewController {
         startStopButton.setTitle("Start", for: .normal)
     }
     
-    func getSubSeconds(elapsed: TimeInterval) -> String {
-        let fractionalPart = elapsed.truncatingRemainder(dividingBy: 1)
-        let displayString = String(format:"%.03f", fractionalPart)
-        let start = displayString.index(displayString.startIndex, offsetBy: 2)
-        let end = displayString.index(displayString.startIndex, offsetBy: 4)
-        let range = start..<end
-        return String(displayString[range])
-    }
-    
-    func getElapsedString(elapsed: TimeInterval) -> String {
-        let totalSeconds = Int(floor(elapsed))
-        
-        let minutes = (totalSeconds / 60) % 60
-        let seconds = totalSeconds % 60
-        let subSeconds = getSubSeconds(elapsed: elapsed)
-        
-        return String(format:"%02d:%02d:%@", minutes, seconds, subSeconds)
-    }
-    
     func handleTick(elapsed: TimeInterval) {
-        elapsedLabel.text = getElapsedString(elapsed: elapsed)
+        elapsedLabel.elapsed = elapsed
     }
     
     @objc func startStopwatch() {
@@ -120,8 +90,6 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         initBackground()
-        
-        elapsedLabel.text = getElapsedString(elapsed: 0)
         
         let buttonSpacer = UIView();
         
