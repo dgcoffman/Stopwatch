@@ -15,7 +15,6 @@ class HomeViewController: UIViewController {
     
     let startStopButton: UIButton = {
         let button = UIButton(type: UIButton.ButtonType.system)
-        button.frame = CGRect(x: 0, y: 0, width: 150, height: 80)
         button.setTitle("Start", for: .normal)
         button.setTitleColor(Color.white, for: .normal)
         button.layer.cornerRadius = 4
@@ -28,7 +27,6 @@ class HomeViewController: UIViewController {
     
     let resetButton: UIButton = {
         let button = UIButton(type: UIButton.ButtonType.system)
-        button.frame = CGRect(x: 0, y: 0, width: 150, height: 80)
         button.setTitle("Reset", for: .normal)
         button.setTitleColor(Color.white, for: .normal)
         button.layer.cornerRadius = 4
@@ -40,13 +38,12 @@ class HomeViewController: UIViewController {
     }()
     
     let elapsedLabel: UILabel = {
-        let label = UILabel(frame: CGRect(x: 100, y: 300, width: 300, height: 120));
-        let shadowColor = UIColor( red: CGFloat(10/255.0), green: CGFloat(80/255.0), blue: CGFloat(180/255.0), alpha: CGFloat(1.0) )
+        let label = UILabel();
         
         label.textColor = Color.white
-        label.shadowColor = shadowColor
+        label.shadowColor = .black
         label.shadowOffset = CGSize(width: 2, height: 2)
-        label.font = UIFont(name: "AvenirNext-DemiBold", size: 64)!
+        label.font = UIFont(name: "AvenirNext-DemiBold", size: 72)!
         
         return label;
     }()
@@ -136,18 +133,33 @@ class HomeViewController: UIViewController {
         
         initBackground()
         
-        elapsedLabel.center.x = view.center.x
-        elapsedLabel.center.y = view.center.y
         elapsedLabel.text = getElapsedString(elapsed: 0)
         
-        startStopButton.frame.origin.y = self.view.frame.maxY - 120
-        startStopButton.frame.origin.x = 20
+        let buttonSpacer = UIView();
         
-        resetButton.frame.origin.y = self.view.frame.maxY - 120
-        resetButton.frame.origin.x = startStopButton.frame.maxX + 20
+        let buttonContainer = UIStackView(arrangedSubviews: [resetButton, buttonSpacer, startStopButton])
+        buttonContainer.axis = .horizontal
+        buttonContainer.distribution = .fillProportionally
+        buttonContainer.alignment = .bottom
         
-        view.addSubview(startStopButton)
-        view.addSubview(resetButton)
-        view.addSubview(elapsedLabel)
+        let layout = UIStackView(arrangedSubviews: [elapsedLabel, buttonContainer])
+        layout.translatesAutoresizingMaskIntoConstraints = false
+        layout.axis = .vertical
+        layout.distribution = .fillEqually
+        layout.alignment = .center
+        
+        view.addSubview(layout)
+        
+        NSLayoutConstraint.activate([
+            layout.topAnchor.constraint(equalTo: view.topAnchor),
+            layout.leftAnchor.constraint(equalTo: view.leftAnchor),
+            layout.rightAnchor.constraint(equalTo: view.rightAnchor),
+            layout.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -24),
+            layout.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            buttonSpacer.widthAnchor.constraint(equalToConstant: 24),
+            buttonContainer.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -48),
+            startStopButton.heightAnchor.constraint(equalToConstant: 100),
+            resetButton.heightAnchor.constraint(equalTo: startStopButton.heightAnchor),
+        ])
     }
 }
