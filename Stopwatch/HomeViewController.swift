@@ -31,7 +31,12 @@ class HomeViewController: UIViewController {
     
     let elapsedLabel: UILabel = {
         let label = UILabel(frame: CGRect(x: 100, y: 300, width: 300, height: 120));
-        label.text = "0.00"
+        let shadowColor = UIColor( red: CGFloat(10/255.0), green: CGFloat(80/255.0), blue: CGFloat(180/255.0), alpha: CGFloat(1.0) )
+        
+        label.shadowColor = shadowColor
+        label.shadowOffset = CGSize(width: 2, height: 2)
+        label.font = UIFont(name: "AvenirNext-DemiBold", size: 64)!
+        
         return label;
     }()
     
@@ -69,8 +74,23 @@ class HomeViewController: UIViewController {
         startStopButton.setTitle("Start", for: .normal)
     }
     
+    func getSubSeconds(elapsed: Double) -> String {
+        let fractionalPart = elapsed.truncatingRemainder(dividingBy: 1)
+        let displayString = String(format:"%.03f", fractionalPart)
+        let start = displayString.index(displayString.startIndex, offsetBy: 2)
+        let end = displayString.index(displayString.startIndex, offsetBy: 4)
+        let range = start..<end
+        return String(displayString[range])
+    }
+    
     func getElapsedString(elapsed: Double) -> String {
-        return String(format:"%.2f", elapsed)
+        let totalSeconds = Int(floor(elapsed))
+        
+        let minutes = (totalSeconds / 60) % 60
+        let seconds = totalSeconds % 60
+        let subSeconds = getSubSeconds(elapsed: elapsed)
+        
+        return String(format:"%02d:%02d:%@", minutes, seconds, subSeconds)
     }
     
     func handleTick(elapsed: Double) {
@@ -104,6 +124,10 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         initBackground()
+        
+        elapsedLabel.center.x = view.center.x
+        elapsedLabel.center.y = view.center.y
+        elapsedLabel.text = getElapsedString(elapsed: 0)
         
         view.addSubview(startStopButton)
         view.addSubview(resetButton)
