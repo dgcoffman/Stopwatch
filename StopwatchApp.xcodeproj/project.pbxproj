@@ -19,6 +19,8 @@
 		5C4860A1225BC58500F0424F /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4860A0225BC58500F0424F /* Button.swift */; };
 		5C4860A3225BCD3600F0424F /* ElapsedTimeDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4860A2225BCD3600F0424F /* ElapsedTimeDisplay.swift */; };
 		5C4860A5225BD08000F0424F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5C4860A4225BD07F00F0424F /* Podfile */; };
+		5C8A3D2D225BE96A00AD138D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A3D2B225BE96A00AD138D /* .gitignore */; };
+		5C8A3D2E225BE96A00AD138D /* .circleci in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A3D2C225BE96A00AD138D /* .circleci */; };
 		66A3CF9F91558EBC5A4EF734 /* Pods_StopwatchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9EB854C3108B42CA4CD97A /* Pods_StopwatchUITests.framework */; };
 		A21D719D658B0DADF8EFD7E5 /* Pods_StopwatchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7259E1F90EC5308C41FEDFD5 /* Pods_StopwatchTests.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +63,8 @@
 		5C4860A0225BC58500F0424F /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		5C4860A2225BCD3600F0424F /* ElapsedTimeDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElapsedTimeDisplay.swift; sourceTree = "<group>"; };
 		5C4860A4225BD07F00F0424F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		5C8A3D2B225BE96A00AD138D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		5C8A3D2C225BE96A00AD138D /* .circleci */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .circleci; sourceTree = "<group>"; };
 		7259E1F90EC5308C41FEDFD5 /* Pods_StopwatchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StopwatchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		759C7AE96692CC46962285C2 /* Pods-StopwatchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopwatchUITests.release.xcconfig"; path = "Target Support Files/Pods-StopwatchUITests/Pods-StopwatchUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A7560F3ECC514FB525EF013B /* Pods-StopwatchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopwatchTests.release.xcconfig"; path = "Target Support Files/Pods-StopwatchTests/Pods-StopwatchTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 		5C2D47522259FED700EB9EBB = {
 			isa = PBXGroup;
 			children = (
+				5C8A3D2C225BE96A00AD138D /* .circleci */,
+				5C8A3D2B225BE96A00AD138D /* .gitignore */,
 				5C4860A4225BD07F00F0424F /* Podfile */,
 				5C48609D225BC4D400F0424F /* README.md */,
 				5C2D475D2259FED700EB9EBB /* Stopwatch */,
@@ -290,8 +296,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C8A3D2D225BE96A00AD138D /* .gitignore in Resources */,
 				5C4860A5225BD08000F0424F /* Podfile in Resources */,
 				5C48609E225BC4D400F0424F /* README.md in Resources */,
+				5C8A3D2E225BE96A00AD138D /* .circleci in Resources */,
 				5C2D47692259FEDA00EB9EBB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
