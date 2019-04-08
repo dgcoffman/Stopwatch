@@ -15,16 +15,26 @@ class HomeViewController: UIViewController {
     
     let startStopButton: UIButton = {
         let button = UIButton(type: UIButton.ButtonType.system)
-        button.frame = CGRect(x: 100, y: 0, width: 300, height: 120)
+        button.frame = CGRect(x: 0, y: 0, width: 150, height: 80)
         button.setTitle("Start", for: .normal)
+        button.setTitleColor(Color.white, for: .normal)
+        button.layer.cornerRadius = 4
+        button.backgroundColor = Color.blue
+        button.titleLabel?.font = UIFont(name: "AvenirNext-DemiBold", size: 24)!
+        
         button.addTarget(self, action: #selector(startStopwatch), for: .touchUpInside)
         return button
     }()
     
     let resetButton: UIButton = {
         let button = UIButton(type: UIButton.ButtonType.system)
-        button.frame = CGRect(x: 100, y: 200, width: 300, height: 120)
+        button.frame = CGRect(x: 0, y: 0, width: 150, height: 80)
         button.setTitle("Reset", for: .normal)
+        button.setTitleColor(Color.white, for: .normal)
+        button.layer.cornerRadius = 4
+        button.backgroundColor = Color.blue
+        button.titleLabel?.font = UIFont(name: "AvenirNext-DemiBold", size: 24)!
+        
         button.addTarget(self, action: #selector(resetStopwatch), for: .touchUpInside)
         return button
     }()
@@ -33,6 +43,7 @@ class HomeViewController: UIViewController {
         let label = UILabel(frame: CGRect(x: 100, y: 300, width: 300, height: 120));
         let shadowColor = UIColor( red: CGFloat(10/255.0), green: CGFloat(80/255.0), blue: CGFloat(180/255.0), alpha: CGFloat(1.0) )
         
+        label.textColor = Color.white
         label.shadowColor = shadowColor
         label.shadowOffset = CGSize(width: 2, height: 2)
         label.font = UIFont(name: "AvenirNext-DemiBold", size: 64)!
@@ -112,7 +123,7 @@ class HomeViewController: UIViewController {
     func initBackground() {
         let gradientStartColor = UIColor( red: CGFloat(10/255.0), green: CGFloat(80/255.0), blue: CGFloat(180/255.0), alpha: CGFloat(1.0) ).cgColor
         
-        let gradientEndColor = gradientStartColor.copy(alpha: 0.9)
+        let gradientEndColor = gradientStartColor.copy(alpha: 0.6)
         
         let gradient = CAGradientLayer()
         gradient.frame = view.bounds
@@ -128,6 +139,12 @@ class HomeViewController: UIViewController {
         elapsedLabel.center.x = view.center.x
         elapsedLabel.center.y = view.center.y
         elapsedLabel.text = getElapsedString(elapsed: 0)
+        
+        startStopButton.frame.origin.y = self.view.frame.maxY - 120
+        startStopButton.frame.origin.x = 20
+        
+        resetButton.frame.origin.y = self.view.frame.maxY - 120
+        resetButton.frame.origin.x = startStopButton.frame.maxX + 20
         
         view.addSubview(startStopButton)
         view.addSubview(resetButton)

@@ -14,6 +14,7 @@
 		5C2D47692259FEDA00EB9EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2D47682259FEDA00EB9EBB /* Assets.xcassets */; };
 		5C2D47772259FEDA00EB9EBB /* StopwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47762259FEDA00EB9EBB /* StopwatchTests.swift */; };
 		5C2D47822259FEDA00EB9EBB /* StopwatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47812259FEDA00EB9EBB /* StopwatchUITests.swift */; };
+		5C48609C225B538000F0424F /* StyleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C48609B225B538000F0424F /* StyleConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		5C2D477D2259FEDA00EB9EBB /* StopwatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopwatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C2D47812259FEDA00EB9EBB /* StopwatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchUITests.swift; sourceTree = "<group>"; };
 		5C2D47832259FEDA00EB9EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C48609B225B538000F0424F /* StyleConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				5C2D476D2259FEDA00EB9EBB /* Info.plist */,
 				5C2D47652259FED700EB9EBB /* Stopwatch.xcdatamodeld */,
 				5C01570A225B385D00260B2B /* Stopwatch.swift */,
+				5C48609B225B538000F0424F /* StyleConstants.swift */,
 			);
 			path = Stopwatch;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				5C2D47612259FED700EB9EBB /* HomeViewController.swift in Sources */,
 				5C2D47672259FED700EB9EBB /* Stopwatch.xcdatamodeld in Sources */,
+				5C48609C225B538000F0424F /* StyleConstants.swift in Sources */,
 				5C2D475F2259FED700EB9EBB /* AppDelegate.swift in Sources */,
 				5C01570B225B385D00260B2B /* Stopwatch.swift in Sources */,
 			);
