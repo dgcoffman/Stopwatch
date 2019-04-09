@@ -26,6 +26,10 @@ jobs:
             - checkout
 
             - run:
+                name: Install XCTool
+                command: brew install xctool
+
+            - run:
                 name: Run unit tests
                 command: xctool -workspace StopwatchApp.xcworkspace -scheme Stopwatch -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.2' run-tests -only StopwatchTests
 
