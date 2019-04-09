@@ -6,8 +6,8 @@
 //  Copyright © 2019 Dan Coffman. All rights reserved.
 //
 
-import UIKit
 import SnapKit
+import UIKit
 
 let defaultTimeInterval = 0.001
 
@@ -27,7 +27,7 @@ class HomeViewController: UIViewController {
         return button
     }()
 
-    required init?(coder aDecoder: NSCoder) {
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
@@ -78,10 +78,11 @@ class HomeViewController: UIViewController {
 
     private func initBackground() {
         let gradientStartColor = UIColor(
-            red: CGFloat(10/255.0),
-            green: CGFloat(80/255.0),
-            blue: CGFloat(180/255.0),
-            alpha: CGFloat(1.0) ).cgColor
+            red: CGFloat(10 / 255.0),
+            green: CGFloat(80 / 255.0),
+            blue: CGFloat(180 / 255.0),
+            alpha: CGFloat(1.0)
+        ).cgColor
 
         let gradientEndColor = gradientStartColor.copy(alpha: 0.6)
 

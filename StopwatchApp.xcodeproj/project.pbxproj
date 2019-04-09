@@ -21,6 +21,7 @@
 		5C4860A5225BD08000F0424F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5C4860A4225BD07F00F0424F /* Podfile */; };
 		5C8A3D2D225BE96A00AD138D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A3D2B225BE96A00AD138D /* .gitignore */; };
 		5C8A3D2E225BE96A00AD138D /* .circleci in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A3D2C225BE96A00AD138D /* .circleci */; };
+		5CFE5653225C7ACA008D30E6 /* format in Resources */ = {isa = PBXBuildFile; fileRef = 5CFE5652225C7ACA008D30E6 /* format */; };
 		66A3CF9F91558EBC5A4EF734 /* Pods_StopwatchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9EB854C3108B42CA4CD97A /* Pods_StopwatchUITests.framework */; };
 		6B4BEBCB830DFD22D4213582 /* Pods_Stopwatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6A762482E91DC0F230647F /* Pods_Stopwatch.framework */; };
 		A21D719D658B0DADF8EFD7E5 /* Pods_StopwatchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7259E1F90EC5308C41FEDFD5 /* Pods_StopwatchTests.framework */; };
@@ -66,6 +67,7 @@
 		5C4860A4225BD07F00F0424F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5C8A3D2B225BE96A00AD138D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		5C8A3D2C225BE96A00AD138D /* .circleci */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .circleci; sourceTree = "<group>"; };
+		5CFE5652225C7ACA008D30E6 /* format */ = {isa = PBXFileReference; lastKnownFileType = text; path = format; sourceTree = "<group>"; };
 		7259E1F90EC5308C41FEDFD5 /* Pods_StopwatchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StopwatchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		759C7AE96692CC46962285C2 /* Pods-StopwatchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopwatchUITests.release.xcconfig"; path = "Target Support Files/Pods-StopwatchUITests/Pods-StopwatchUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A7560F3ECC514FB525EF013B /* Pods-StopwatchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopwatchTests.release.xcconfig"; path = "Target Support Files/Pods-StopwatchTests/Pods-StopwatchTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		5C2D47522259FED700EB9EBB = {
 			isa = PBXGroup;
 			children = (
+				5CFE5651225C7AA7008D30E6 /* Scripts */,
 				5C8A3D2C225BE96A00AD138D /* .circleci */,
 				5C8A3D2B225BE96A00AD138D /* .gitignore */,
 				5C4860A4225BD07F00F0424F /* Podfile */,
@@ -171,6 +174,14 @@
 				5C4860A2225BCD3600F0424F /* ElapsedTimeDisplay.swift */,
 			);
 			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		5CFE5651225C7AA7008D30E6 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				5CFE5652225C7ACA008D30E6 /* format */,
+			);
+			path = Scripts;
 			sourceTree = "<group>";
 		};
 		6C0E6FF5BC75104A0B2ECF36 /* Pods */ = {
@@ -307,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C8A3D2D225BE96A00AD138D /* .gitignore in Resources */,
+				5CFE5653225C7ACA008D30E6 /* format in Resources */,
 				5C4860A5225BD08000F0424F /* Podfile in Resources */,
 				5C48609E225BC4D400F0424F /* README.md in Resources */,
 				5C8A3D2E225BE96A00AD138D /* .circleci in Resources */,

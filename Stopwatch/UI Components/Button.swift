@@ -17,8 +17,8 @@ class Button: UIButton {
         layer.cornerRadius = 4
         titleLabel?.font = UIFont(name: "AvenirNext-DemiBold", size: 24)!
         backgroundColor = Color.blue
-        self.setTitle(text, for: .normal)
-        self.setTitleColor(Color.white, for: .normal)
+        setTitle(text, for: .normal)
+        setTitleColor(Color.white, for: .normal)
     }
 
     required init?(coder aDecoder: NSCoder) {

@@ -9,7 +9,7 @@
 import Foundation
 
 func noop() {}
-func oneParamNoop<T>(value: T) {}
+func oneParamNoop<T>(value _: T) {}
 
 class Stopwatch {
     let interval: TimeInterval
@@ -36,7 +36,7 @@ class Stopwatch {
 
     @objc func start() {
         timer = Timer(timeInterval: interval, target: self, selector: #selector(tick), userInfo: nil, repeats: true)
-        RunLoop.current.add(self.timer!, forMode: RunLoop.Mode.common)
+        RunLoop.current.add(timer!, forMode: RunLoop.Mode.common)
         isRunning = true
     }
 
@@ -49,7 +49,7 @@ class Stopwatch {
         elapsed = 0
     }
 
-    @objc func tick(timer: Timer) {
+    @objc func tick(timer _: Timer) {
         elapsed += interval
     }
 }

@@ -15,7 +15,7 @@ class ElapsedTimeDisplay: UILabel {
         let displayString = String(format: "%.03f", fractionalPart)
         let start = displayString.index(displayString.startIndex, offsetBy: 2)
         let end = displayString.index(displayString.startIndex, offsetBy: 4)
-        let range = start..<end
+        let range = start ..< end
         return String(displayString[range])
     }
 
@@ -31,18 +31,18 @@ class ElapsedTimeDisplay: UILabel {
 
     var elapsed: Double = 0 {
         didSet {
-            self.text = ElapsedTimeDisplay.getElapsedString(elapsed: elapsed)
+            text = ElapsedTimeDisplay.getElapsedString(elapsed: elapsed)
         }
     }
 
     init() {
         super.init(frame: CGRect.zero)
 
-        self.textColor = Color.white
-        self.shadowColor = .black
-        self.shadowOffset = CGSize(width: 2, height: 2)
-        self.font = UIFont(name: "AvenirNext-DemiBold", size: 72)!
-        self.text = ElapsedTimeDisplay.getElapsedString(elapsed: elapsed)
+        textColor = Color.white
+        shadowColor = .black
+        shadowOffset = CGSize(width: 2, height: 2)
+        font = UIFont(name: "AvenirNext-DemiBold", size: 72)!
+        text = ElapsedTimeDisplay.getElapsedString(elapsed: elapsed)
     }
 
     required init?(coder aDecoder: NSCoder) {
