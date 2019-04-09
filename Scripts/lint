@@ -1,0 +1,5 @@
+#!/bin/bash
+
+swiftlint lint Stopwatch StopwatchTests StopwatchUITests
+
+./Pods/SwiftFormat/CommandLineTool/swiftformat --exclude Pods --lint ..

@@ -139,7 +139,6 @@ class HomeViewController: UIViewController {
 
         startStopButton.snp.makeConstraints { (make) -> Void in
             make.height.equalTo(100)
-
         }
 
         resetButton.snp.makeConstraints { (make) -> Void in

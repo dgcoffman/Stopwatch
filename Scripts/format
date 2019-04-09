@@ -1,3 +1,4 @@
 #!/bin/bash
+swiftlint autocorrect Stopwatch StopwatchTests StopwatchUITests
 
 ./Pods/SwiftFormat/CommandLineTool/swiftformat --exclude Pods .

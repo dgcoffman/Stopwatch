@@ -13,11 +13,13 @@ import UIKit
 class LapTableViewController: UITableViewController {
     struct Lap {
         let lapNumber: Int
-        let time: TimeInterval
+        let duration: TimeInterval
+        let endTime: TimeInterval
 
-        init(lapNumber: Int, time: TimeInterval) {
+        init(lapNumber: Int, duration: TimeInterval, endTime: TimeInterval) {
             self.lapNumber = lapNumber
-            self.time = time
+            self.duration = duration
+            self.endTime = endTime
         }
     }
 
@@ -33,8 +35,7 @@ class LapTableViewController: UITableViewController {
 
             let rowContainer = UIStackView(arrangedSubviews: [leftContent, rightContent])
             rowContainer.axis = .horizontal
-            rowContainer.distribution = .fillProportionally
-            rowContainer.alignment = .bottom
+            rowContainer.distribution = .equalSpacing
 
             contentView.addSubview(rowContainer)
 
@@ -62,13 +63,16 @@ class LapTableViewController: UITableViewController {
     }
 
     func record(elapsed: TimeInterval) {
-        laps.append(Lap(lapNumber: lapNumber, time: elapsed)) // Do I need lapNumber in here?
+        let lastLapEndTime = laps.last?.endTime ?? 0
+        let lapDuration = elapsed - lastLapEndTime
+
+        laps.append(Lap(lapNumber: lapNumber, duration: lapDuration, endTime: elapsed))
         lapNumber += 1
         reRender()
     }
 
     func clear() {
-        lapNumber = 1;
+        lapNumber = 1
         laps = Array()
         tableView.reloadData()
     }
@@ -83,13 +87,14 @@ class LapTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // A hell of off-by-one errors
-        let lapNumber = laps.count - indexPath.row
-        let time: TimeInterval = laps[lapNumber - 1].time
-        let displayTime = ElapsedTimeDisplay.getElapsedString(elapsed: time)
-        let cell: Row = tableView.dequeueReusableCell(withIdentifier: "Row", for: indexPath as IndexPath) as! Row
-        cell.leftContent.text = "Lap \(lapNumber)"
-        cell.rightContent.text = displayTime
+        guard
+            let lap = laps.last,
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Row", for: indexPath as IndexPath) as? Row
+        else { fatalError() }
+
+        cell.leftContent.text = "Lap \(lap.lapNumber)"
+        cell.rightContent.text = ElapsedTimeDisplay.getElapsedString(elapsed: lap.duration)
+
         return cell
     }
 }
