@@ -20,6 +20,6 @@ target 'StopwatchTests' do
     testing_pods
 end
 
-target 'StopwatchUITests' do
+target 'UITests' do
     testing_pods
 end

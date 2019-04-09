@@ -1,7 +1,7 @@
 version: 2
 
 jobs:
-    Test:
+    UITest:
         macos:
             xcode: '10.2.0'
 
@@ -9,11 +9,29 @@ jobs:
             - checkout
 
             - run:
-                name: Build and run tests
-                command: xcodebuild -workspace StopwatchApp.xcworkspace -scheme Stopwatch -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.2' test | xcpretty --report junit
+                name: Build and Run UI tests
+                command: xcodebuild -workspace StopwatchApp.xcworkspace -scheme Stopwatch -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.2' test -only-testing:UITests | xcpretty
 
             - store_test_results:
                 path: build/reports/junit.xml
+
+            - store_artifacts:
+                path: build/reports/junit.xml
+
+    UnitTest:
+        macos:
+            xcode: '10.2.0'
+
+        steps:
+            - checkout
+
+            - run:
+                name: Run unit tests
+                command: xctool -workspace StopwatchApp.xcworkspace -scheme Stopwatch -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.2' run-tests -only StopwatchTests
+
+            - store_test_results:
+                path: build/reports/junit.xml
+
             - store_artifacts:
                 path: build/reports/junit.xml
 
@@ -50,4 +68,5 @@ workflows:
         jobs:
             - SwiftLint
             - SwiftFormat
-            - Test
+            - UnitTest
+            - UITest

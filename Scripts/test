@@ -1,3 +1,0 @@
-#!/bin/bash
-
-xcodebuild -workspace StopwatchApp.xcworkspace -scheme Stopwatch -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.2' test | xcpretty --report junit

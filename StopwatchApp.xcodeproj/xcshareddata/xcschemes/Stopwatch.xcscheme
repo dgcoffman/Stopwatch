@@ -42,9 +42,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5C2D477C2259FEDA00EB9EBB"
-               BuildableName = "StopwatchUITests.xctest"
-               BlueprintName = "StopwatchUITests"
+               BlueprintIdentifier = "5C7D22B3225D3C9A00149A5A"
+               BuildableName = "UITests.xctest"
+               BlueprintName = "UITests"
                ReferencedContainer = "container:StopwatchApp.xcodeproj">
             </BuildableReference>
          </TestableReference>

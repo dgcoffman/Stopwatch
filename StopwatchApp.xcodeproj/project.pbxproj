@@ -13,14 +13,16 @@
 		5C2D47672259FED700EB9EBB /* Stopwatch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47652259FED700EB9EBB /* Stopwatch.xcdatamodeld */; };
 		5C2D47692259FEDA00EB9EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2D47682259FEDA00EB9EBB /* Assets.xcassets */; };
 		5C2D47772259FEDA00EB9EBB /* StopwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47762259FEDA00EB9EBB /* StopwatchTests.swift */; };
-		5C2D47822259FEDA00EB9EBB /* StopwatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47812259FEDA00EB9EBB /* StopwatchUITests.swift */; };
 		5C48609C225B538000F0424F /* StyleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C48609B225B538000F0424F /* StyleConstants.swift */; };
 		5C48609E225BC4D400F0424F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5C48609D225BC4D400F0424F /* README.md */; };
 		5C4860A1225BC58500F0424F /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4860A0225BC58500F0424F /* Button.swift */; };
 		5C4860A3225BCD3600F0424F /* ElapsedTimeDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4860A2225BCD3600F0424F /* ElapsedTimeDisplay.swift */; };
 		5C4860A5225BD08000F0424F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5C4860A4225BD07F00F0424F /* Podfile */; };
+		5C7D22C0225D3EBD00149A5A /* Pods_UITests.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F718E5E62C4D19C75B285B02 /* Pods_UITests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5C7D22C3225D3FBD00149A5A /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7D22C1225D3FBD00149A5A /* Tests.swift */; };
+		5C7D22C5225D482F00149A5A /* unittest in Resources */ = {isa = PBXBuildFile; fileRef = 5C7D22C4225D482F00149A5A /* unittest */; };
+		5C7D22C7225D49E000149A5A /* uitest in Resources */ = {isa = PBXBuildFile; fileRef = 5C7D22C6225D49E000149A5A /* uitest */; };
 		5C898D39225CA9870058D191 /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = 5C898D38225CA9860058D191 /* .swift-version */; };
-		5C898D3B225CFE570058D191 /* test in Resources */ = {isa = PBXBuildFile; fileRef = 5C898D3A225CFE570058D191 /* test */; };
 		5C898D3F225D093A0058D191 /* LapCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C898D3E225D093A0058D191 /* LapCounter.swift */; };
 		5C898D42225D09950058D191 /* NoOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C898D41225D09950058D191 /* NoOp.swift */; };
 		5C8A3D2D225BE96A00AD138D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A3D2B225BE96A00AD138D /* .gitignore */; };
@@ -28,7 +30,7 @@
 		5C97F149225C9CB10049A2C7 /* LapTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C97F148225C9CB10049A2C7 /* LapTable.swift */; };
 		5C97F14B225CA6BD0049A2C7 /* lint in Resources */ = {isa = PBXBuildFile; fileRef = 5C97F14A225CA6BD0049A2C7 /* lint */; };
 		5CFE5653225C7ACA008D30E6 /* format in Resources */ = {isa = PBXBuildFile; fileRef = 5CFE5652225C7ACA008D30E6 /* format */; };
-		66A3CF9F91558EBC5A4EF734 /* Pods_StopwatchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9EB854C3108B42CA4CD97A /* Pods_StopwatchUITests.framework */; };
+		697E78E04A5E3C03839F3FBF /* Pods_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F718E5E62C4D19C75B285B02 /* Pods_UITests.framework */; };
 		6B4BEBCB830DFD22D4213582 /* Pods_Stopwatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6A762482E91DC0F230647F /* Pods_Stopwatch.framework */; };
 		A21D719D658B0DADF8EFD7E5 /* Pods_StopwatchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7259E1F90EC5308C41FEDFD5 /* Pods_StopwatchTests.framework */; };
 		D8BF822615DFF49AEFF88D0B /* Pods_Stopwatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6A762482E91DC0F230647F /* Pods_Stopwatch.framework */; };
@@ -42,7 +44,7 @@
 			remoteGlobalIDString = 5C2D475A2259FED700EB9EBB;
 			remoteInfo = Stopwatch;
 		};
-		5C2D477E2259FEDA00EB9EBB /* PBXContainerItemProxy */ = {
+		5C7D22B9225D3C9A00149A5A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5C2D47532259FED700EB9EBB /* Project object */;
 			proxyType = 1;
@@ -51,8 +53,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5C7D22BF225D3E9F00149A5A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5C7D22C0225D3EBD00149A5A /* Pods_UITests.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		2F9EB854C3108B42CA4CD97A /* Pods_StopwatchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StopwatchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C01570A225B385D00260B2B /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		5C01570C225B3E8C00260B2B /* Prototypes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Prototypes.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5C2D475B2259FED700EB9EBB /* Stopwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stopwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,17 +78,18 @@
 		5C2D47722259FEDA00EB9EBB /* StopwatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopwatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C2D47762259FEDA00EB9EBB /* StopwatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchTests.swift; sourceTree = "<group>"; };
 		5C2D47782259FEDA00EB9EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C2D477D2259FEDA00EB9EBB /* StopwatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopwatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C2D47812259FEDA00EB9EBB /* StopwatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchUITests.swift; sourceTree = "<group>"; };
-		5C2D47832259FEDA00EB9EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C35F4C0225D2DFD00FF1FDA /* Stopwatch copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Stopwatch copy-Info.plist"; path = "/Users/dancoffman/src/SwiftProjects/Stopwatch/Stopwatch copy-Info.plist"; sourceTree = "<absolute>"; };
 		5C48609B225B538000F0424F /* StyleConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleConstants.swift; sourceTree = "<group>"; };
 		5C48609D225BC4D400F0424F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5C4860A0225BC58500F0424F /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		5C4860A2225BCD3600F0424F /* ElapsedTimeDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElapsedTimeDisplay.swift; sourceTree = "<group>"; };
 		5C4860A4225BD07F00F0424F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5C7D22B4225D3C9A00149A5A /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C7D22B8225D3C9A00149A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C7D22C1225D3FBD00149A5A /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		5C7D22C4225D482F00149A5A /* unittest */ = {isa = PBXFileReference; lastKnownFileType = text; path = unittest; sourceTree = "<group>"; };
+		5C7D22C6225D49E000149A5A /* uitest */ = {isa = PBXFileReference; lastKnownFileType = text; path = uitest; sourceTree = "<group>"; };
 		5C898D38225CA9860058D191 /* .swift-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
-		5C898D3A225CFE570058D191 /* test */ = {isa = PBXFileReference; lastKnownFileType = text; path = test; sourceTree = "<group>"; };
 		5C898D3E225D093A0058D191 /* LapCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapCounter.swift; sourceTree = "<group>"; };
 		5C898D41225D09950058D191 /* NoOp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoOp.swift; sourceTree = "<group>"; };
 		5C8A3D2B225BE96A00AD138D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -85,11 +100,14 @@
 		6BEF1A3ABF8C5866F543C721 /* Pods-Stopwatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stopwatch.debug.xcconfig"; path = "Target Support Files/Pods-Stopwatch/Pods-Stopwatch.debug.xcconfig"; sourceTree = "<group>"; };
 		7259E1F90EC5308C41FEDFD5 /* Pods_StopwatchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StopwatchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		759C7AE96692CC46962285C2 /* Pods-StopwatchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopwatchUITests.release.xcconfig"; path = "Target Support Files/Pods-StopwatchUITests/Pods-StopwatchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		96AD90ABA781A131DE8D5D7B /* Pods-UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITests.debug.xcconfig"; path = "Target Support Files/Pods-UITests/Pods-UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A7560F3ECC514FB525EF013B /* Pods-StopwatchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopwatchTests.release.xcconfig"; path = "Target Support Files/Pods-StopwatchTests/Pods-StopwatchTests.release.xcconfig"; sourceTree = "<group>"; };
+		AFB9CB7FF24ED83649631EC0 /* Pods-UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITests.release.xcconfig"; path = "Target Support Files/Pods-UITests/Pods-UITests.release.xcconfig"; sourceTree = "<group>"; };
 		B63E9AB1EF63EFD42E7E546F /* Pods-StopwatchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopwatchTests.debug.xcconfig"; path = "Target Support Files/Pods-StopwatchTests/Pods-StopwatchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C484C083DBF4C85697F7BE65 /* Pods-Stopwatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stopwatch.release.xcconfig"; path = "Target Support Files/Pods-Stopwatch/Pods-Stopwatch.release.xcconfig"; sourceTree = "<group>"; };
 		C6FE1ED0BB7B71337A992E8B /* Pods-StopwatchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopwatchUITests.debug.xcconfig"; path = "Target Support Files/Pods-StopwatchUITests/Pods-StopwatchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD6A762482E91DC0F230647F /* Pods_Stopwatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stopwatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F718E5E62C4D19C75B285B02 /* Pods_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,11 +128,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C2D477A2259FEDA00EB9EBB /* Frameworks */ = {
+		5C7D22B1225D3C9A00149A5A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66A3CF9F91558EBC5A4EF734 /* Pods_StopwatchUITests.framework in Frameworks */,
+				697E78E04A5E3C03839F3FBF /* Pods_UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +150,7 @@
 				5C48609D225BC4D400F0424F /* README.md */,
 				5C2D475D2259FED700EB9EBB /* Stopwatch */,
 				5C2D47752259FEDA00EB9EBB /* StopwatchTests */,
-				5C2D47802259FEDA00EB9EBB /* StopwatchUITests */,
+				5C7D22B5225D3C9A00149A5A /* UITests */,
 				5C2D475C2259FED700EB9EBB /* Products */,
 				6C0E6FF5BC75104A0B2ECF36 /* Pods */,
 				F94066F045999EDA722DDE3D /* Frameworks */,
@@ -145,7 +163,7 @@
 			children = (
 				5C2D475B2259FED700EB9EBB /* Stopwatch.app */,
 				5C2D47722259FEDA00EB9EBB /* StopwatchTests.xctest */,
-				5C2D477D2259FEDA00EB9EBB /* StopwatchUITests.xctest */,
+				5C7D22B4225D3C9A00149A5A /* UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,15 +194,6 @@
 			path = StopwatchTests;
 			sourceTree = "<group>";
 		};
-		5C2D47802259FEDA00EB9EBB /* StopwatchUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5C2D47812259FEDA00EB9EBB /* StopwatchUITests.swift */,
-				5C2D47832259FEDA00EB9EBB /* Info.plist */,
-			);
-			path = StopwatchUITests;
-			sourceTree = "<group>";
-		};
 		5C48609F225BC57000F0424F /* UI Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +202,15 @@
 				5C97F148225C9CB10049A2C7 /* LapTable.swift */,
 			);
 			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		5C7D22B5225D3C9A00149A5A /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				5C7D22B8225D3C9A00149A5A /* Info.plist */,
+				5C7D22C1225D3FBD00149A5A /* Tests.swift */,
+			);
+			path = UITests;
 			sourceTree = "<group>";
 		};
 		5C898D3C225D04780058D191 /* Views */ = {
@@ -225,7 +243,8 @@
 			children = (
 				5CFE5652225C7ACA008D30E6 /* format */,
 				5C97F14A225CA6BD0049A2C7 /* lint */,
-				5C898D3A225CFE570058D191 /* test */,
+				5C7D22C4225D482F00149A5A /* unittest */,
+				5C7D22C6225D49E000149A5A /* uitest */,
 			);
 			path = Scripts;
 			sourceTree = "<group>";
@@ -239,6 +258,8 @@
 				759C7AE96692CC46962285C2 /* Pods-StopwatchUITests.release.xcconfig */,
 				6BEF1A3ABF8C5866F543C721 /* Pods-Stopwatch.debug.xcconfig */,
 				C484C083DBF4C85697F7BE65 /* Pods-Stopwatch.release.xcconfig */,
+				96AD90ABA781A131DE8D5D7B /* Pods-UITests.debug.xcconfig */,
+				AFB9CB7FF24ED83649631EC0 /* Pods-UITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -247,8 +268,8 @@
 			isa = PBXGroup;
 			children = (
 				7259E1F90EC5308C41FEDFD5 /* Pods_StopwatchTests.framework */,
-				2F9EB854C3108B42CA4CD97A /* Pods_StopwatchUITests.framework */,
 				CD6A762482E91DC0F230647F /* Pods_Stopwatch.framework */,
+				F718E5E62C4D19C75B285B02 /* Pods_UITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -295,24 +316,25 @@
 			productReference = 5C2D47722259FEDA00EB9EBB /* StopwatchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5C2D477C2259FEDA00EB9EBB /* StopwatchUITests */ = {
+		5C7D22B3225D3C9A00149A5A /* UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C2D478C2259FEDA00EB9EBB /* Build configuration list for PBXNativeTarget "StopwatchUITests" */;
+			buildConfigurationList = 5C7D22BB225D3C9A00149A5A /* Build configuration list for PBXNativeTarget "UITests" */;
 			buildPhases = (
-				536C80CE4C2B245784F2C89E /* [CP] Check Pods Manifest.lock */,
-				5C2D47792259FEDA00EB9EBB /* Sources */,
-				5C2D477A2259FEDA00EB9EBB /* Frameworks */,
-				5C2D477B2259FEDA00EB9EBB /* Resources */,
-				99991DD90FDE7226BC3F91F0 /* [CP] Embed Pods Frameworks */,
+				DA6F0D542304ECD5967DBAA9 /* [CP] Check Pods Manifest.lock */,
+				5C7D22B0225D3C9A00149A5A /* Sources */,
+				5C7D22B1225D3C9A00149A5A /* Frameworks */,
+				5C7D22B2225D3C9A00149A5A /* Resources */,
+				62717174BC44AF241F1E72EE /* [CP] Embed Pods Frameworks */,
+				5C7D22BF225D3E9F00149A5A /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5C2D477F2259FEDA00EB9EBB /* PBXTargetDependency */,
+				5C7D22BA225D3C9A00149A5A /* PBXTargetDependency */,
 			);
-			name = StopwatchUITests;
-			productName = StopwatchUITests;
-			productReference = 5C2D477D2259FEDA00EB9EBB /* StopwatchUITests.xctest */;
+			name = UITests;
+			productName = UITests;
+			productReference = 5C7D22B4225D3C9A00149A5A /* UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -332,7 +354,7 @@
 						CreatedOnToolsVersion = 10.2;
 						TestTargetID = 5C2D475A2259FED700EB9EBB;
 					};
-					5C2D477C2259FEDA00EB9EBB = {
+					5C7D22B3225D3C9A00149A5A = {
 						CreatedOnToolsVersion = 10.2;
 						TestTargetID = 5C2D475A2259FED700EB9EBB;
 					};
@@ -353,7 +375,7 @@
 			targets = (
 				5C2D475A2259FED700EB9EBB /* Stopwatch */,
 				5C2D47712259FEDA00EB9EBB /* StopwatchTests */,
-				5C2D477C2259FEDA00EB9EBB /* StopwatchUITests */,
+				5C7D22B3225D3C9A00149A5A /* UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -366,9 +388,10 @@
 				5C8A3D2D225BE96A00AD138D /* .gitignore in Resources */,
 				5CFE5653225C7ACA008D30E6 /* format in Resources */,
 				5C4860A5225BD08000F0424F /* Podfile in Resources */,
+				5C7D22C7225D49E000149A5A /* uitest in Resources */,
 				5C48609E225BC4D400F0424F /* README.md in Resources */,
+				5C7D22C5225D482F00149A5A /* unittest in Resources */,
 				5C898D39225CA9870058D191 /* .swift-version in Resources */,
-				5C898D3B225CFE570058D191 /* test in Resources */,
 				5C8A3D2E225BE96A00AD138D /* .circleci in Resources */,
 				5C97F14B225CA6BD0049A2C7 /* lint in Resources */,
 				5C2D47692259FEDA00EB9EBB /* Assets.xcassets in Resources */,
@@ -382,7 +405,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C2D477B2259FEDA00EB9EBB /* Resources */ = {
+		5C7D22B2225D3C9A00149A5A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -392,28 +415,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		536C80CE4C2B245784F2C89E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-StopwatchUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		56D63712672389B4C78CBA0F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -438,7 +439,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StopwatchTests/Pods-StopwatchTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		99991DD90FDE7226BC3F91F0 /* [CP] Embed Pods Frameworks */ = {
+		62717174BC44AF241F1E72EE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -446,7 +447,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StopwatchUITests/Pods-StopwatchUITests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-UITests/Pods-UITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
@@ -459,7 +460,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StopwatchUITests/Pods-StopwatchUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UITests/Pods-UITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9FB84835DD7A15AD7CFA4E9E /* [CP] Embed Pods Frameworks */ = {
@@ -500,6 +501,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-StopwatchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA6F0D542304ECD5967DBAA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -556,11 +579,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C2D47792259FEDA00EB9EBB /* Sources */ = {
+		5C7D22B0225D3C9A00149A5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C2D47822259FEDA00EB9EBB /* StopwatchUITests.swift in Sources */,
+				5C7D22C3225D3FBD00149A5A /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,10 +595,10 @@
 			target = 5C2D475A2259FED700EB9EBB /* Stopwatch */;
 			targetProxy = 5C2D47732259FEDA00EB9EBB /* PBXContainerItemProxy */;
 		};
-		5C2D477F2259FEDA00EB9EBB /* PBXTargetDependency */ = {
+		5C7D22BA225D3C9A00149A5A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5C2D475A2259FED700EB9EBB /* Stopwatch */;
-			targetProxy = 5C2D477E2259FEDA00EB9EBB /* PBXContainerItemProxy */;
+			targetProxy = 5C7D22B9225D3C9A00149A5A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -741,6 +764,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = StopwatchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -762,6 +786,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = StopwatchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -776,43 +801,51 @@
 			};
 			name = Release;
 		};
-		5C2D478D2259FEDA00EB9EBB /* Debug */ = {
+		5C7D22BC225D3C9A00149A5A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6FE1ED0BB7B71337A992E8B /* Pods-StopwatchUITests.debug.xcconfig */;
+			baseConfigurationReference = 96AD90ABA781A131DE8D5D7B /* Pods-UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = StopwatchUITests/Info.plist;
+				DEVELOPMENT_TEAM = XD38Q7R897;
+				INFOPLIST_FILE = UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dgc.StopwatchUITests;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = dgc.UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Stopwatch;
+				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
 		};
-		5C2D478E2259FEDA00EB9EBB /* Release */ = {
+		5C7D22BD225D3C9A00149A5A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 759C7AE96692CC46962285C2 /* Pods-StopwatchUITests.release.xcconfig */;
+			baseConfigurationReference = AFB9CB7FF24ED83649631EC0 /* Pods-UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = StopwatchUITests/Info.plist;
+				DEVELOPMENT_TEAM = XD38Q7R897;
+				INFOPLIST_FILE = UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dgc.StopwatchUITests;
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = dgc.UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Stopwatch;
+				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
@@ -846,11 +879,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C2D478C2259FEDA00EB9EBB /* Build configuration list for PBXNativeTarget "StopwatchUITests" */ = {
+		5C7D22BB225D3C9A00149A5A /* Build configuration list for PBXNativeTarget "UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5C2D478D2259FEDA00EB9EBB /* Debug */,
-				5C2D478E2259FEDA00EB9EBB /* Release */,
+				5C7D22BC225D3C9A00149A5A /* Debug */,
+				5C7D22BD225D3C9A00149A5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
