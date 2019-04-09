@@ -738,7 +738,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B63E9AB1EF63EFD42E7E546F /* Pods-StopwatchTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = StopwatchTests/Info.plist;
@@ -759,7 +759,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A7560F3ECC514FB525EF013B /* Pods-StopwatchTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = StopwatchTests/Info.plist;
@@ -780,7 +780,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C6FE1ED0BB7B71337A992E8B /* Pods-StopwatchUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = StopwatchUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -800,7 +800,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 759C7AE96692CC46962285C2 /* Pods-StopwatchUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = StopwatchUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
