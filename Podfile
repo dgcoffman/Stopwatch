@@ -9,6 +9,8 @@ def testing_pods
     pod 'Nimble'
 end
 
+pod 'SwiftFormat/CLI'
+
 target 'Stopwatch' do
     pod 'SnapKit', '~> 4.0.0'
 end
