@@ -12,7 +12,7 @@ end
 pod 'SwiftFormat/CLI'
 
 target 'Stopwatch' do
-    pod 'SnapKit', '~> 4.0.0'
+    pod 'SnapKit', '~> 4.0.0', :inhibit_warnings => true
 end
 
 target 'StopwatchTests' do
