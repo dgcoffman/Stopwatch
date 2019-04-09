@@ -10,7 +10,7 @@ jobs:
 
             - run:
                 name: Build and Run UI tests
-                command: xcodebuild -workspace StopwatchApp.xcworkspace -scheme Stopwatch -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.2' test -only-testing:UITests | xcpretty
+                command: Scripts/uitest
 
             - store_test_results:
                 path: build/reports/junit.xml
@@ -27,7 +27,7 @@ jobs:
 
             - run:
                 name: Run unit tests
-                command: xcodebuild -workspace StopwatchApp.xcworkspace -scheme Stopwatch -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.2' test -only-testing:StopwatchTests | xcpretty
+                command: Scripts/unittest
 
             - store_test_results:
                 path: build/reports/junit.xml

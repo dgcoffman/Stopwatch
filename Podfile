@@ -11,6 +11,7 @@ def testing_pods
 end
 
 pod 'SwiftFormat/CLI'
+pod 'xcbeautify'
 
 target 'Stopwatch' do
     pod 'SnapKit', '~> 4.0.0'

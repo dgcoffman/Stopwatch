@@ -21,12 +21,12 @@
 		5C7D22C0225D3EBD00149A5A /* Pods_UITests.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F718E5E62C4D19C75B285B02 /* Pods_UITests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5C7D22C3225D3FBD00149A5A /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7D22C1225D3FBD00149A5A /* Tests.swift */; };
 		5C7D22C5225D482F00149A5A /* unittest in Resources */ = {isa = PBXBuildFile; fileRef = 5C7D22C4225D482F00149A5A /* unittest */; };
-		5C7D22C7225D49E000149A5A /* uitest in Resources */ = {isa = PBXBuildFile; fileRef = 5C7D22C6225D49E000149A5A /* uitest */; };
 		5C898D39225CA9870058D191 /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = 5C898D38225CA9860058D191 /* .swift-version */; };
 		5C898D3F225D093A0058D191 /* LapCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C898D3E225D093A0058D191 /* LapCounter.swift */; };
 		5C898D42225D09950058D191 /* NoOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C898D41225D09950058D191 /* NoOp.swift */; };
 		5C8A3D2D225BE96A00AD138D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A3D2B225BE96A00AD138D /* .gitignore */; };
 		5C8A3D2E225BE96A00AD138D /* .circleci in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A3D2C225BE96A00AD138D /* .circleci */; };
+		5C944916225D66B90071B966 /* uitest in Resources */ = {isa = PBXBuildFile; fileRef = 5C944915225D66B90071B966 /* uitest */; };
 		5C97F149225C9CB10049A2C7 /* LapTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C97F148225C9CB10049A2C7 /* LapTable.swift */; };
 		5C97F14B225CA6BD0049A2C7 /* lint in Resources */ = {isa = PBXBuildFile; fileRef = 5C97F14A225CA6BD0049A2C7 /* lint */; };
 		5CFE5653225C7ACA008D30E6 /* format in Resources */ = {isa = PBXBuildFile; fileRef = 5CFE5652225C7ACA008D30E6 /* format */; };
@@ -88,12 +88,12 @@
 		5C7D22B8225D3C9A00149A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C7D22C1225D3FBD00149A5A /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		5C7D22C4225D482F00149A5A /* unittest */ = {isa = PBXFileReference; lastKnownFileType = text; path = unittest; sourceTree = "<group>"; };
-		5C7D22C6225D49E000149A5A /* uitest */ = {isa = PBXFileReference; lastKnownFileType = text; path = uitest; sourceTree = "<group>"; };
 		5C898D38225CA9860058D191 /* .swift-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
 		5C898D3E225D093A0058D191 /* LapCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapCounter.swift; sourceTree = "<group>"; };
 		5C898D41225D09950058D191 /* NoOp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoOp.swift; sourceTree = "<group>"; };
 		5C8A3D2B225BE96A00AD138D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		5C8A3D2C225BE96A00AD138D /* .circleci */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .circleci; sourceTree = "<group>"; };
+		5C944915225D66B90071B966 /* uitest */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = uitest; sourceTree = "<group>"; };
 		5C97F148225C9CB10049A2C7 /* LapTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapTable.swift; sourceTree = "<group>"; };
 		5C97F14A225CA6BD0049A2C7 /* lint */ = {isa = PBXFileReference; lastKnownFileType = text; path = lint; sourceTree = "<group>"; };
 		5CFE5652225C7ACA008D30E6 /* format */ = {isa = PBXFileReference; lastKnownFileType = text; path = format; sourceTree = "<group>"; };
@@ -241,10 +241,10 @@
 		5CFE5651225C7AA7008D30E6 /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
+				5C944915225D66B90071B966 /* uitest */,
 				5CFE5652225C7ACA008D30E6 /* format */,
 				5C97F14A225CA6BD0049A2C7 /* lint */,
 				5C7D22C4225D482F00149A5A /* unittest */,
-				5C7D22C6225D49E000149A5A /* uitest */,
 			);
 			path = Scripts;
 			sourceTree = "<group>";
@@ -388,7 +388,7 @@
 				5C8A3D2D225BE96A00AD138D /* .gitignore in Resources */,
 				5CFE5653225C7ACA008D30E6 /* format in Resources */,
 				5C4860A5225BD08000F0424F /* Podfile in Resources */,
-				5C7D22C7225D49E000149A5A /* uitest in Resources */,
+				5C944916225D66B90071B966 /* uitest in Resources */,
 				5C48609E225BC4D400F0424F /* README.md in Resources */,
 				5C7D22C5225D482F00149A5A /* unittest in Resources */,
 				5C898D39225CA9870058D191 /* .swift-version in Resources */,

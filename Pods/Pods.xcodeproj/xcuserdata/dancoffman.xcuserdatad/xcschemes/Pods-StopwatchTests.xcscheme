@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "135B4A35B350B16CC36B4849AF306090"
+               BlueprintIdentifier = "D3485121DC9E5BBB466D02913C68BE1E"
                BuildableName = "Pods_StopwatchTests.framework"
                BlueprintName = "Pods-StopwatchTests"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "135B4A35B350B16CC36B4849AF306090"
+            BlueprintIdentifier = "D3485121DC9E5BBB466D02913C68BE1E"
             BuildableName = "Pods_StopwatchTests.framework"
             BlueprintName = "Pods-StopwatchTests"
             ReferencedContainer = "container:Pods.xcodeproj">
