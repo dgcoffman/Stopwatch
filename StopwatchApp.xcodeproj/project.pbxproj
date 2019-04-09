@@ -78,7 +78,6 @@
 		5C2D47722259FEDA00EB9EBB /* StopwatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopwatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C2D47762259FEDA00EB9EBB /* StopwatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchTests.swift; sourceTree = "<group>"; };
 		5C2D47782259FEDA00EB9EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C35F4C0225D2DFD00FF1FDA /* Stopwatch copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Stopwatch copy-Info.plist"; path = "/Users/dancoffman/src/SwiftProjects/Stopwatch/Stopwatch copy-Info.plist"; sourceTree = "<absolute>"; };
 		5C48609B225B538000F0424F /* StyleConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleConstants.swift; sourceTree = "<group>"; };
 		5C48609D225BC4D400F0424F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5C4860A0225BC58500F0424F /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
@@ -154,7 +153,6 @@
 				5C2D475C2259FED700EB9EBB /* Products */,
 				6C0E6FF5BC75104A0B2ECF36 /* Pods */,
 				F94066F045999EDA722DDE3D /* Frameworks */,
-				5C35F4C0225D2DFD00FF1FDA /* Stopwatch copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
