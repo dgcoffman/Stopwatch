@@ -1,7 +1,9 @@
-# Stopwatch
-iOS Stopwatch
+[![CircleCI](https://circleci.com/gh/dgcoffman/Stopwatch/tree/master.svg?style=svg)](https://circleci.com/gh/dgcoffman/Stopwatch/tree/master)
 
-Here I'm learning:
+# Stopwatch
+The world's most over-engineered stopwatch app for iOS.
+
+I'm learning:
 - Swift
 - UIKit
 - SwiftLint
