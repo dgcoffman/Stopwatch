@@ -1,11 +1,3 @@
-//
-//  Button.swift
-//  Stopwatch
-//
-//  Created by Dan Coffman on 4/8/19.
-//  Copyright © 2019 Dan Coffman. All rights reserved.
-//
-
 import Foundation
 import UIKit
 

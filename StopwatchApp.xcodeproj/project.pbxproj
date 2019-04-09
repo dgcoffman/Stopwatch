@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5C01570B225B385D00260B2B /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C01570A225B385D00260B2B /* Stopwatch.swift */; };
 		5C2D475F2259FED700EB9EBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D475E2259FED700EB9EBB /* AppDelegate.swift */; };
-		5C2D47612259FED700EB9EBB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47602259FED700EB9EBB /* HomeViewController.swift */; };
+		5C2D47612259FED700EB9EBB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47602259FED700EB9EBB /* HomeView.swift */; };
 		5C2D47672259FED700EB9EBB /* Stopwatch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47652259FED700EB9EBB /* Stopwatch.xcdatamodeld */; };
 		5C2D47692259FEDA00EB9EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2D47682259FEDA00EB9EBB /* Assets.xcassets */; };
 		5C2D47772259FEDA00EB9EBB /* StopwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47762259FEDA00EB9EBB /* StopwatchTests.swift */; };
@@ -21,9 +21,11 @@
 		5C4860A5225BD08000F0424F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5C4860A4225BD07F00F0424F /* Podfile */; };
 		5C898D39225CA9870058D191 /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = 5C898D38225CA9860058D191 /* .swift-version */; };
 		5C898D3B225CFE570058D191 /* test in Resources */ = {isa = PBXBuildFile; fileRef = 5C898D3A225CFE570058D191 /* test */; };
+		5C898D3F225D093A0058D191 /* LapCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C898D3E225D093A0058D191 /* LapCounter.swift */; };
+		5C898D42225D09950058D191 /* NoOp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C898D41225D09950058D191 /* NoOp.swift */; };
 		5C8A3D2D225BE96A00AD138D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A3D2B225BE96A00AD138D /* .gitignore */; };
 		5C8A3D2E225BE96A00AD138D /* .circleci in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A3D2C225BE96A00AD138D /* .circleci */; };
-		5C97F149225C9CB10049A2C7 /* LapTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C97F148225C9CB10049A2C7 /* LapTableViewController.swift */; };
+		5C97F149225C9CB10049A2C7 /* LapTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C97F148225C9CB10049A2C7 /* LapTable.swift */; };
 		5C97F14B225CA6BD0049A2C7 /* lint in Resources */ = {isa = PBXBuildFile; fileRef = 5C97F14A225CA6BD0049A2C7 /* lint */; };
 		5CFE5653225C7ACA008D30E6 /* format in Resources */ = {isa = PBXBuildFile; fileRef = 5CFE5652225C7ACA008D30E6 /* format */; };
 		66A3CF9F91558EBC5A4EF734 /* Pods_StopwatchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9EB854C3108B42CA4CD97A /* Pods_StopwatchUITests.framework */; };
@@ -54,7 +56,7 @@
 		5C01570C225B3E8C00260B2B /* Prototypes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Prototypes.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5C2D475B2259FED700EB9EBB /* Stopwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stopwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C2D475E2259FED700EB9EBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5C2D47602259FED700EB9EBB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5C2D47602259FED700EB9EBB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5C2D47662259FED700EB9EBB /* Stopwatch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stopwatch.xcdatamodel; sourceTree = "<group>"; };
 		5C2D47682259FEDA00EB9EBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C2D476D2259FEDA00EB9EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,9 +73,11 @@
 		5C4860A4225BD07F00F0424F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5C898D38225CA9860058D191 /* .swift-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
 		5C898D3A225CFE570058D191 /* test */ = {isa = PBXFileReference; lastKnownFileType = text; path = test; sourceTree = "<group>"; };
+		5C898D3E225D093A0058D191 /* LapCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapCounter.swift; sourceTree = "<group>"; };
+		5C898D41225D09950058D191 /* NoOp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoOp.swift; sourceTree = "<group>"; };
 		5C8A3D2B225BE96A00AD138D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		5C8A3D2C225BE96A00AD138D /* .circleci */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .circleci; sourceTree = "<group>"; };
-		5C97F148225C9CB10049A2C7 /* LapTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapTableViewController.swift; sourceTree = "<group>"; };
+		5C97F148225C9CB10049A2C7 /* LapTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapTable.swift; sourceTree = "<group>"; };
 		5C97F14A225CA6BD0049A2C7 /* lint */ = {isa = PBXFileReference; lastKnownFileType = text; path = lint; sourceTree = "<group>"; };
 		5CFE5652225C7ACA008D30E6 /* format */ = {isa = PBXFileReference; lastKnownFileType = text; path = format; sourceTree = "<group>"; };
 		7259E1F90EC5308C41FEDFD5 /* Pods_StopwatchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StopwatchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,14 +149,15 @@
 		5C2D475D2259FED700EB9EBB /* Stopwatch */ = {
 			isa = PBXGroup;
 			children = (
+				5C898D40225D097D0058D191 /* Utilities */,
+				5C898D3D225D092B0058D191 /* Services */,
+				5C898D3C225D04780058D191 /* Views */,
 				5C48609F225BC57000F0424F /* UI Components */,
 				5C01570C225B3E8C00260B2B /* Prototypes.playground */,
 				5C2D475E2259FED700EB9EBB /* AppDelegate.swift */,
-				5C2D47602259FED700EB9EBB /* HomeViewController.swift */,
 				5C2D47682259FEDA00EB9EBB /* Assets.xcassets */,
 				5C2D476D2259FEDA00EB9EBB /* Info.plist */,
 				5C2D47652259FED700EB9EBB /* Stopwatch.xcdatamodeld */,
-				5C01570A225B385D00260B2B /* Stopwatch.swift */,
 				5C48609B225B538000F0424F /* StyleConstants.swift */,
 			);
 			path = Stopwatch;
@@ -181,9 +186,34 @@
 			children = (
 				5C4860A0225BC58500F0424F /* Button.swift */,
 				5C4860A2225BCD3600F0424F /* ElapsedTimeDisplay.swift */,
-				5C97F148225C9CB10049A2C7 /* LapTableViewController.swift */,
+				5C97F148225C9CB10049A2C7 /* LapTable.swift */,
 			);
 			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		5C898D3C225D04780058D191 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5C2D47602259FED700EB9EBB /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5C898D3D225D092B0058D191 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5C898D3E225D093A0058D191 /* LapCounter.swift */,
+				5C01570A225B385D00260B2B /* Stopwatch.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5C898D40225D097D0058D191 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5C898D41225D09950058D191 /* NoOp.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		5CFE5651225C7AA7008D30E6 /* Scripts */ = {
@@ -501,13 +531,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C2D47612259FED700EB9EBB /* HomeViewController.swift in Sources */,
+				5C2D47612259FED700EB9EBB /* HomeView.swift in Sources */,
 				5C4860A1225BC58500F0424F /* Button.swift in Sources */,
 				5C2D47672259FED700EB9EBB /* Stopwatch.xcdatamodeld in Sources */,
-				5C97F149225C9CB10049A2C7 /* LapTableViewController.swift in Sources */,
+				5C97F149225C9CB10049A2C7 /* LapTable.swift in Sources */,
 				5C48609C225B538000F0424F /* StyleConstants.swift in Sources */,
 				5C2D475F2259FED700EB9EBB /* AppDelegate.swift in Sources */,
 				5C4860A3225BCD3600F0424F /* ElapsedTimeDisplay.swift in Sources */,
+				5C898D42225D09950058D191 /* NoOp.swift in Sources */,
+				5C898D3F225D093A0058D191 /* LapCounter.swift in Sources */,
 				5C01570B225B385D00260B2B /* Stopwatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

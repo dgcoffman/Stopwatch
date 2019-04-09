@@ -1,15 +1,4 @@
-//
-//  Stopwatch.swift
-//  Stopwatch
-//
-//  Created by Dan Coffman on 4/8/19.
-//  Copyright © 2019 Dan Coffman. All rights reserved.
-//
-
 import Foundation
-
-func noop() {}
-func oneParamNoop<T>(value _: T) {}
 
 class Stopwatch {
     private let interval: TimeInterval

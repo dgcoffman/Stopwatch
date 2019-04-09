@@ -3,9 +3,9 @@ import UIKit
 
 let defaultTimeInterval = 0.001
 
-class HomeViewController: UIViewController {
+class HomeView: UIViewController {
     private let stopwatch: Stopwatch
-    private let laps: LapTableViewController
+    private let laps: LapTable
 
     private let elapsedLabel = ElapsedTimeDisplay()
 
@@ -36,7 +36,7 @@ class HomeViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
-    init(stopwatch: Stopwatch, laps: LapTableViewController = LapTableViewController()) {
+    init(stopwatch: Stopwatch, laps: LapTable = LapTable()) {
         self.stopwatch = stopwatch
         self.laps = laps
 
