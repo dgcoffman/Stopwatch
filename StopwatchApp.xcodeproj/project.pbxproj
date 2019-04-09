@@ -20,6 +20,7 @@
 		5C4860A3225BCD3600F0424F /* ElapsedTimeDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4860A2225BCD3600F0424F /* ElapsedTimeDisplay.swift */; };
 		5C4860A5225BD08000F0424F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5C4860A4225BD07F00F0424F /* Podfile */; };
 		5C898D39225CA9870058D191 /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = 5C898D38225CA9860058D191 /* .swift-version */; };
+		5C898D3B225CFE570058D191 /* test in Resources */ = {isa = PBXBuildFile; fileRef = 5C898D3A225CFE570058D191 /* test */; };
 		5C8A3D2D225BE96A00AD138D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A3D2B225BE96A00AD138D /* .gitignore */; };
 		5C8A3D2E225BE96A00AD138D /* .circleci in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A3D2C225BE96A00AD138D /* .circleci */; };
 		5C97F149225C9CB10049A2C7 /* LapTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C97F148225C9CB10049A2C7 /* LapTableViewController.swift */; };
@@ -69,6 +70,7 @@
 		5C4860A2225BCD3600F0424F /* ElapsedTimeDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElapsedTimeDisplay.swift; sourceTree = "<group>"; };
 		5C4860A4225BD07F00F0424F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5C898D38225CA9860058D191 /* .swift-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
+		5C898D3A225CFE570058D191 /* test */ = {isa = PBXFileReference; lastKnownFileType = text; path = test; sourceTree = "<group>"; };
 		5C8A3D2B225BE96A00AD138D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		5C8A3D2C225BE96A00AD138D /* .circleci */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .circleci; sourceTree = "<group>"; };
 		5C97F148225C9CB10049A2C7 /* LapTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapTableViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			children = (
 				5CFE5652225C7ACA008D30E6 /* format */,
 				5C97F14A225CA6BD0049A2C7 /* lint */,
+				5C898D3A225CFE570058D191 /* test */,
 			);
 			path = Scripts;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				5C4860A5225BD08000F0424F /* Podfile in Resources */,
 				5C48609E225BC4D400F0424F /* README.md in Resources */,
 				5C898D39225CA9870058D191 /* .swift-version in Resources */,
+				5C898D3B225CFE570058D191 /* test in Resources */,
 				5C8A3D2E225BE96A00AD138D /* .circleci in Resources */,
 				5C97F14B225CA6BD0049A2C7 /* lint in Resources */,
 				5C2D47692259FEDA00EB9EBB /* Assets.xcassets in Resources */,
@@ -662,6 +666,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XD38Q7R897;
 				INFOPLIST_FILE = Stopwatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -680,6 +685,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XD38Q7R897;
 				INFOPLIST_FILE = Stopwatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
