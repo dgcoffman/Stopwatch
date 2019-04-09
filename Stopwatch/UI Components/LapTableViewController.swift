@@ -54,7 +54,7 @@ class LapTableViewController: UITableViewController {
     private var lapNumber = 1
     private var laps: [Lap] = Array()
 
-    func update() {
+    private func reRender() {
         let indexPath = IndexPath(row: 0, section: 0) // Always insert the row at the top of the table
         tableView.beginUpdates()
         tableView.insertRows(at: [indexPath], with: .automatic)
@@ -64,7 +64,13 @@ class LapTableViewController: UITableViewController {
     func record(elapsed: TimeInterval) {
         laps.append(Lap(lapNumber: lapNumber, time: elapsed)) // Do I need lapNumber in here?
         lapNumber += 1
-        update()
+        reRender()
+    }
+
+    func clear() {
+        lapNumber = 1;
+        laps = Array()
+        tableView.reloadData()
     }
 
     override func viewDidLoad() {

@@ -24,7 +24,7 @@ class HomeViewController: UIViewController {
 
     private let resetButton: Button = {
         let button = Button(text: "Reset")
-        button.addTarget(self, action: #selector(resetStopwatch), for: .touchUpInside)
+        button.addTarget(self, action: #selector(reset), for: .touchUpInside)
         return button
     }()
 
@@ -80,8 +80,9 @@ class HomeViewController: UIViewController {
         stopwatch.stop()
     }
 
-    @objc func resetStopwatch() {
+    @objc func reset() {
         stopwatch.reset()
+        lapTableViewController.clear()
     }
 
     @objc func recordLapTime() {
