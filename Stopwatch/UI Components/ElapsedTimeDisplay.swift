@@ -19,7 +19,7 @@ class ElapsedTimeDisplay: UILabel {
         return String(displayString[range])
     }
 
-    private static func getElapsedString(elapsed: TimeInterval) -> String {
+    static func getElapsedString(elapsed: TimeInterval) -> String {
         let totalSeconds = Int(floor(elapsed))
 
         let minutes = (totalSeconds / 60) % 60

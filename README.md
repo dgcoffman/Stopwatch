@@ -2,12 +2,13 @@
 iOS Stopwatch
 
 Here I'm learning:
-SwiftLint
-SwiftFormat
-CocoaPods
-Quick
-Nimble
-SnapKit
-xcodebuild
-xcpretty
-CircleCI for iOS builds
+- Swift
+- UIKit
+- SwiftLint
+- SwiftFormat
+- CocoaPods
+- Swift unit testing with Quick and Nimble
+- SnapKit
+- xcodebuild
+- xcpretty
+- CircleCI for iOS builds

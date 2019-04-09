@@ -12,8 +12,8 @@ func noop() {}
 func oneParamNoop<T>(value _: T) {}
 
 class Stopwatch {
-    let interval: TimeInterval
-    var timer: Timer?
+    private let interval: TimeInterval
+    private var timer: Timer?
     var onStart: () -> Void = noop
     var onStop: () -> Void = noop
     var onTick: (Double) -> Void = oneParamNoop

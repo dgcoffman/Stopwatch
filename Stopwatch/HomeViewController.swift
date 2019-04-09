@@ -13,6 +13,7 @@ let defaultTimeInterval = 0.001
 
 class HomeViewController: UIViewController {
     private let stopwatch: Stopwatch
+    let lapTableViewController: LapTableViewController
     private let elapsedLabel = ElapsedTimeDisplay()
 
     private let startStopButton: Button = {
@@ -27,6 +28,12 @@ class HomeViewController: UIViewController {
         return button
     }()
 
+    private let lapButton: Button = {
+        let button = Button(text: "Lap")
+        button.addTarget(self, action: #selector(recordLapTime), for: .touchUpInside)
+        return button
+    }()
+
     required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -36,8 +43,9 @@ class HomeViewController: UIViewController {
         self.init(stopwatch: stopwatch)
     }
 
-    init(stopwatch: Stopwatch) {
+    init(stopwatch: Stopwatch, lapTableViewController: LapTableViewController = LapTableViewController()) {
         self.stopwatch = stopwatch
+        self.lapTableViewController = lapTableViewController
         super.init(nibName: nil, bundle: nil) // this sucks
 
         stopwatch.onStart = handleStart
@@ -76,6 +84,10 @@ class HomeViewController: UIViewController {
         stopwatch.reset()
     }
 
+    @objc func recordLapTime() {
+        lapTableViewController.record(elapsed: stopwatch.elapsed)
+    }
+
     private func initBackground() {
         let gradientStartColor = UIColor(
             red: CGFloat(10 / 255.0),
@@ -99,12 +111,12 @@ class HomeViewController: UIViewController {
 
         let buttonSpacer = UIView()
 
-        let buttonContainer = UIStackView(arrangedSubviews: [resetButton, buttonSpacer, startStopButton])
+        let buttonContainer = UIStackView(arrangedSubviews: [resetButton, lapButton, startStopButton])
         buttonContainer.axis = .horizontal
         buttonContainer.distribution = .fillProportionally
         buttonContainer.alignment = .bottom
 
-        let layout = UIStackView(arrangedSubviews: [elapsedLabel, buttonContainer])
+        let layout = UIStackView(arrangedSubviews: [elapsedLabel, lapTableViewController.tableView, buttonContainer])
         layout.translatesAutoresizingMaskIntoConstraints = false
         layout.axis = .vertical
         layout.distribution = .fillEqually
@@ -118,6 +130,13 @@ class HomeViewController: UIViewController {
             make.left.equalTo(view.snp.left)
             make.right.equalTo(view.snp.right)
             make.centerX.equalTo(view.snp.centerX)
+        }
+
+        lapTableViewController.tableView.snp.makeConstraints { (make) -> Void in
+            make.top.equalTo(elapsedLabel.snp.bottom)
+            make.bottom.equalTo(buttonContainer.snp.top)
+            make.left.equalTo(view.snp.left)
+            make.right.equalTo(view.snp.right)
         }
 
         buttonSpacer.snp.makeConstraints { (make) -> Void in
