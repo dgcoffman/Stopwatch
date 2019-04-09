@@ -26,16 +26,8 @@ jobs:
             - checkout
 
             - run:
-                name: Install XCTool
-                command: HOMEBREW_NO_AUTO_UPDATE=1 brew install xctool
-
-            - run:
-                name: Build the app
-                command: xcodebuild -workspace StopwatchApp.xcworkspace -scheme Stopwatch -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.2' build-for-testing
-
-            - run:
                 name: Run unit tests
-                command: xctool -workspace StopwatchApp.xcworkspace -scheme Stopwatch -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.2' run-tests -only StopwatchTests
+                command: xcodebuild -workspace StopwatchApp.xcworkspace -scheme Stopwatch -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.2' test -only-testing:StopwatchTests | xcpretty
 
             - store_test_results:
                 path: build/reports/junit.xml
