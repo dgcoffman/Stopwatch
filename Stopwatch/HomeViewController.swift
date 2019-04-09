@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  Stopwatch
-//
-//  Created by Dan Coffman on 4/7/19.
-//  Copyright © 2019 Dan Coffman. All rights reserved.
-//
-
 import SnapKit
 import UIKit
 
@@ -13,7 +5,8 @@ let defaultTimeInterval = 0.001
 
 class HomeViewController: UIViewController {
     private let stopwatch: Stopwatch
-    let lapTableViewController: LapTableViewController
+    private let laps: LapTableViewController
+
     private let elapsedLabel = ElapsedTimeDisplay()
 
     private let startStopButton: Button = {
@@ -34,19 +27,20 @@ class HomeViewController: UIViewController {
         return button
     }()
 
-    required init?(coder _: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
     convenience init(interval: Double = defaultTimeInterval) {
         let stopwatch = Stopwatch(interval: interval)
         self.init(stopwatch: stopwatch)
     }
 
-    init(stopwatch: Stopwatch, lapTableViewController: LapTableViewController = LapTableViewController()) {
+    required init?(coder _: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    init(stopwatch: Stopwatch, laps: LapTableViewController = LapTableViewController()) {
         self.stopwatch = stopwatch
-        self.lapTableViewController = lapTableViewController
-        super.init(nibName: nil, bundle: nil) // this sucks
+        self.laps = laps
+
+        super.init(nibName: nil, bundle: nil)
 
         stopwatch.onStart = handleStart
         stopwatch.onStop = handleStop
@@ -82,11 +76,11 @@ class HomeViewController: UIViewController {
 
     @objc func reset() {
         stopwatch.reset()
-        lapTableViewController.clear()
+        laps.clear()
     }
 
     @objc func recordLapTime() {
-        lapTableViewController.record(elapsed: stopwatch.elapsed)
+        laps.record(elapsed: stopwatch.elapsed)
     }
 
     private func initBackground() {
@@ -110,14 +104,13 @@ class HomeViewController: UIViewController {
 
         initBackground()
 
-        let buttonSpacer = UIView()
-
         let buttonContainer = UIStackView(arrangedSubviews: [resetButton, lapButton, startStopButton])
         buttonContainer.axis = .horizontal
+        buttonContainer.spacing = 24
         buttonContainer.distribution = .fillProportionally
         buttonContainer.alignment = .bottom
 
-        let layout = UIStackView(arrangedSubviews: [elapsedLabel, lapTableViewController.tableView, buttonContainer])
+        let layout = UIStackView(arrangedSubviews: [elapsedLabel, laps.tableView, buttonContainer])
         layout.translatesAutoresizingMaskIntoConstraints = false
         layout.axis = .vertical
         layout.distribution = .fillEqually
@@ -133,15 +126,11 @@ class HomeViewController: UIViewController {
             make.centerX.equalTo(view.snp.centerX)
         }
 
-        lapTableViewController.tableView.snp.makeConstraints { (make) -> Void in
+        laps.tableView.snp.makeConstraints { (make) -> Void in
             make.top.equalTo(elapsedLabel.snp.bottom)
             make.bottom.equalTo(buttonContainer.snp.top)
             make.left.equalTo(view.snp.left)
             make.right.equalTo(view.snp.right)
-        }
-
-        buttonSpacer.snp.makeConstraints { (make) -> Void in
-            make.width.equalTo(24)
         }
 
         buttonContainer.snp.makeConstraints { (make) -> Void in
@@ -150,9 +139,14 @@ class HomeViewController: UIViewController {
 
         startStopButton.snp.makeConstraints { (make) -> Void in
             make.height.equalTo(100)
+
         }
 
         resetButton.snp.makeConstraints { (make) -> Void in
+            make.height.equalTo(100)
+        }
+
+        lapButton.snp.makeConstraints { (make) -> Void in
             make.height.equalTo(100)
         }
     }

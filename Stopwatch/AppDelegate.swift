@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Stopwatch
-//
-//  Created by Dan Coffman on 4/7/19.
-//  Copyright © 2019 Dan Coffman. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
@@ -15,11 +7,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_: UIApplication,
                      didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let homeViewController = HomeViewController()
-
-        window!.rootViewController = homeViewController
-
-        // https://developer.apple.com/documentation/uikit/uiwindow/1621601-makekeyandvisible
+        window!.rootViewController = HomeViewController()
         window!.makeKeyAndVisible()
         return true
     }
