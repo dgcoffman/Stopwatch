@@ -3,6 +3,7 @@
 platform :ios, '11.0'
 
 use_frameworks!
+inhibit_all_warnings!
 
 def testing_pods
     pod 'Quick'
@@ -12,7 +13,7 @@ end
 pod 'SwiftFormat/CLI'
 
 target 'Stopwatch' do
-    pod 'SnapKit', '~> 4.0.0', :inhibit_warnings => true
+    pod 'SnapKit', '~> 4.0.0'
 end
 
 target 'StopwatchTests' do
