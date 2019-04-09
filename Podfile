@@ -9,6 +9,10 @@ def testing_pods
     pod 'Nimble'
 end
 
+target 'Stopwatch' do
+    pod 'SnapKit', '~> 4.0.0'
+end
+
 target 'StopwatchTests' do
     testing_pods
 end

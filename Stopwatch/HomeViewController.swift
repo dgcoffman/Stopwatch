@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 let defaultTimeInterval = 0.001
 
@@ -110,16 +111,28 @@ class HomeViewController: UIViewController {
 
         view.addSubview(layout)
 
-        NSLayoutConstraint.activate([
-            layout.topAnchor.constraint(equalTo: view.topAnchor),
-            layout.leftAnchor.constraint(equalTo: view.leftAnchor),
-            layout.rightAnchor.constraint(equalTo: view.rightAnchor),
-            layout.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -24),
-            layout.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            buttonSpacer.widthAnchor.constraint(equalToConstant: 24),
-            buttonContainer.widthAnchor.constraint(equalTo: view.widthAnchor, constant: -48),
-            startStopButton.heightAnchor.constraint(equalToConstant: 100),
-            resetButton.heightAnchor.constraint(equalTo: startStopButton.heightAnchor)
-        ])
+        layout.snp.makeConstraints { (make) -> Void in
+            make.top.equalTo(view.snp.top)
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
+            make.left.equalTo(view.snp.left)
+            make.right.equalTo(view.snp.right)
+            make.centerX.equalTo(view.snp.centerX)
+        }
+
+        buttonSpacer.snp.makeConstraints { (make) -> Void in
+            make.width.equalTo(24)
+        }
+
+        buttonContainer.snp.makeConstraints { (make) -> Void in
+            make.width.equalTo(view.safeAreaLayoutGuide.snp.width).offset(-48)
+        }
+
+        startStopButton.snp.makeConstraints { (make) -> Void in
+            make.height.equalTo(100)
+        }
+
+        resetButton.snp.makeConstraints { (make) -> Void in
+            make.height.equalTo(100)
+        }
     }
 }
