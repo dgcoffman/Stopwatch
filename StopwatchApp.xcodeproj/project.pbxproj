@@ -27,6 +27,7 @@
 		5C8A3D2D225BE96A00AD138D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A3D2B225BE96A00AD138D /* .gitignore */; };
 		5C8A3D2E225BE96A00AD138D /* .circleci in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A3D2C225BE96A00AD138D /* .circleci */; };
 		5C944916225D66B90071B966 /* uitest in Resources */ = {isa = PBXBuildFile; fileRef = 5C944915225D66B90071B966 /* uitest */; };
+		5C944918225D69480071B966 /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 5C944917225D69480071B966 /* Gemfile */; };
 		5C97F149225C9CB10049A2C7 /* LapTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C97F148225C9CB10049A2C7 /* LapTable.swift */; };
 		5C97F14B225CA6BD0049A2C7 /* lint in Resources */ = {isa = PBXBuildFile; fileRef = 5C97F14A225CA6BD0049A2C7 /* lint */; };
 		5CFE5653225C7ACA008D30E6 /* format in Resources */ = {isa = PBXBuildFile; fileRef = 5CFE5652225C7ACA008D30E6 /* format */; };
@@ -93,6 +94,7 @@
 		5C8A3D2B225BE96A00AD138D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		5C8A3D2C225BE96A00AD138D /* .circleci */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .circleci; sourceTree = "<group>"; };
 		5C944915225D66B90071B966 /* uitest */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = uitest; sourceTree = "<group>"; };
+		5C944917225D69480071B966 /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		5C97F148225C9CB10049A2C7 /* LapTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapTable.swift; sourceTree = "<group>"; };
 		5C97F14A225CA6BD0049A2C7 /* lint */ = {isa = PBXFileReference; lastKnownFileType = text; path = lint; sourceTree = "<group>"; };
 		5CFE5652225C7ACA008D30E6 /* format */ = {isa = PBXFileReference; lastKnownFileType = text; path = format; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		5C2D47522259FED700EB9EBB = {
 			isa = PBXGroup;
 			children = (
+				5C944917225D69480071B966 /* Gemfile */,
 				5C898D38225CA9860058D191 /* .swift-version */,
 				5CFE5651225C7AA7008D30E6 /* Scripts */,
 				5C8A3D2C225BE96A00AD138D /* .circleci */,
@@ -384,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C8A3D2D225BE96A00AD138D /* .gitignore in Resources */,
+				5C944918225D69480071B966 /* Gemfile in Resources */,
 				5CFE5653225C7ACA008D30E6 /* format in Resources */,
 				5C4860A5225BD08000F0424F /* Podfile in Resources */,
 				5C944916225D66B90071B966 /* uitest in Resources */,

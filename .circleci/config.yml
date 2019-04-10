@@ -9,14 +9,18 @@ jobs:
             - checkout
 
             - run:
+                name: Bundle install
+                command: bundle install
+
+            - run:
                 name: Build and Run UI tests
                 command: Scripts/uitest
 
             - store_test_results:
-                path: build/reports/junit.xml
+                path: TestResults
 
             - store_artifacts:
-                path: build/reports/junit.xml
+                path: TestResults
 
     UnitTest:
         macos:
@@ -26,14 +30,18 @@ jobs:
             - checkout
 
             - run:
+                name: Bundle install
+                command: bundle install
+
+            - run:
                 name: Run unit tests
                 command: Scripts/unittest
 
             - store_test_results:
-                path: build/reports/junit.xml
+                path: TestResults
 
             - store_artifacts:
-                path: build/reports/junit.xml
+                path: TestResults
 
     SwiftLint:
         docker:

@@ -1,7 +1,12 @@
 #!/bin/bash
 set -o pipefail
 
-SCRIPT_DIR="$( cd "$( dirname "$0" )/.." && pwd )"
-BEAUTIFY="$SCRIPT_DIR/Pods/xcbeautify/xcbeautify"
+ROOT_DIR="$( cd "$( dirname "$0" )/.." && pwd )"
+BEAUTIFY="$ROOT_DIR/Pods/xcbeautify/xcbeautify"
 
-xcodebuild -workspace StopwatchApp.xcworkspace -scheme Stopwatch -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.2' test -only-testing:StopwatchTests | $BEAUTIFY
+rm -rf $ROOT_DIR/TestResults
+
+xcodebuild -workspace StopwatchApp.xcworkspace -scheme Stopwatch -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.2' test -only-testing:StopwatchTests -resultBundlePath TestResults | $BEAUTIFY
+
+cd "$ROOT_DIR/TestResults"
+trainer
