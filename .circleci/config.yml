@@ -36,7 +36,7 @@ jobs:
                 command: bundle install
 
             - run:
-                name: Build the app and run uit tests
+                name: Build the app and run unit tests
                 command: Scripts/unittest
 
             - store_test_results:
