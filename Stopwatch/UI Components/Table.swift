@@ -1,9 +1,8 @@
 /*
-    This is a generic table that can render data from any class implementing
-    the TableDataSource protocol.
+ This is a generic table that can render data from any class implementing
+ the TableDataSource protocol.
 
-
-*/
+ */
 
 import Foundation
 import SnapKit
