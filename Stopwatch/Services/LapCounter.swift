@@ -32,8 +32,7 @@ class LapCounter: TableDataSource {
         }
     }
 
-    func insert(value: Any) {
-        guard let value = value as? TimeInterval else { fatalError("LapCounter.insert only accepts values of type TimeInterval") }
+    func insert(value: TimeInterval) {
         let lastLapEndTime = laps.last?.endTime ?? 0
         let lapDuration = value - lastLapEndTime
 

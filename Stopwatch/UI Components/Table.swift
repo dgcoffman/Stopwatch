@@ -1,3 +1,10 @@
+/*
+    This is a generic table that can render data from any class implementing
+    the TableDataSource protocol.
+
+
+*/
+
 import Foundation
 import SnapKit
 import UIKit
@@ -11,7 +18,6 @@ protocol TableDataSource {
     func clear()
     var count: Int { get }
     var lastItem: TableRowData? { get }
-    func insert(value: Any)
 }
 
 class Table: UITableViewController {
