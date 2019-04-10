@@ -72,3 +72,6 @@ UnitTest and UITest both use `xcodebuild test`, with [xcbeautify](https://github
 5. You do have to [set a "Development Team" in project settings](https://github.com/dgcoffman/Stopwatch/commit/5f3736882db766a2de9504acc7b9a1a331713a92#diff-e266983aaf3d6ff04f2126ca1ec13686R669), or xcodebuild will complain about it occasionally.
 6. xcodebuild takes an argument like `-resultBundlePath TestResults` that causes it to write a bunch of test run metadata until the TestResults directory in your project. This is essential because you want to upload that to Circle as a test artifact, and use the TestSummaries.plist file in there as the source for your JUnit-formatted XML (the thing Circle uses to show you a test summary). This is important!
 7. SwiftLint has an `autocorrect` command and SwiftFormat has a `lint` command, so these tools are basically inverse of each other. But you should use them both, since SwiftLint's format is not sufficiently opinionated.
+
+
+See also my initial research and thoughts about the iOS|Swift ecosystem and tools: https://gist.github.com/dgcoffman/620cd50ce94bdd03b78f67179e92de1a
