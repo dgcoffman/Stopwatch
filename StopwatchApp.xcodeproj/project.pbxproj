@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F0F26D6B7A361AE5B8DFC0A /* Pods_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C03CBB96B038202E15986CBA /* Pods_Tests.framework */; };
 		5C01570B225B385D00260B2B /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C01570A225B385D00260B2B /* Stopwatch.swift */; };
 		5C2D475F2259FED700EB9EBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D475E2259FED700EB9EBB /* AppDelegate.swift */; };
 		5C2D47612259FED700EB9EBB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47602259FED700EB9EBB /* HomeView.swift */; };
@@ -69,6 +70,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		29E3BDFD0ABB90C2BDFCF548 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5C01570A225B385D00260B2B /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		5C01570C225B3E8C00260B2B /* Prototypes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Prototypes.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5C2D475B2259FED700EB9EBB /* Stopwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stopwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +102,7 @@
 		5C97F14A225CA6BD0049A2C7 /* lint */ = {isa = PBXFileReference; lastKnownFileType = text; path = lint; sourceTree = "<group>"; };
 		5CE113D3225DF36500AEBD68 /* LapTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapTable.swift; sourceTree = "<group>"; };
 		5CFE5652225C7ACA008D30E6 /* format */ = {isa = PBXFileReference; lastKnownFileType = text; path = format; sourceTree = "<group>"; };
+		66B3EDD931C564237529A0D3 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6BEF1A3ABF8C5866F543C721 /* Pods-Stopwatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stopwatch.debug.xcconfig"; path = "Target Support Files/Pods-Stopwatch/Pods-Stopwatch.debug.xcconfig"; sourceTree = "<group>"; };
 		7259E1F90EC5308C41FEDFD5 /* Pods_StopwatchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StopwatchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		759C7AE96692CC46962285C2 /* Pods-StopwatchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopwatchUITests.release.xcconfig"; path = "Target Support Files/Pods-StopwatchUITests/Pods-StopwatchUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +110,7 @@
 		A7560F3ECC514FB525EF013B /* Pods-StopwatchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopwatchTests.release.xcconfig"; path = "Target Support Files/Pods-StopwatchTests/Pods-StopwatchTests.release.xcconfig"; sourceTree = "<group>"; };
 		AFB9CB7FF24ED83649631EC0 /* Pods-UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITests.release.xcconfig"; path = "Target Support Files/Pods-UITests/Pods-UITests.release.xcconfig"; sourceTree = "<group>"; };
 		B63E9AB1EF63EFD42E7E546F /* Pods-StopwatchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopwatchTests.debug.xcconfig"; path = "Target Support Files/Pods-StopwatchTests/Pods-StopwatchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C03CBB96B038202E15986CBA /* Pods_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C484C083DBF4C85697F7BE65 /* Pods-Stopwatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stopwatch.release.xcconfig"; path = "Target Support Files/Pods-Stopwatch/Pods-Stopwatch.release.xcconfig"; sourceTree = "<group>"; };
 		C6FE1ED0BB7B71337A992E8B /* Pods-StopwatchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StopwatchUITests.debug.xcconfig"; path = "Target Support Files/Pods-StopwatchUITests/Pods-StopwatchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD6A762482E91DC0F230647F /* Pods_Stopwatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stopwatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A21D719D658B0DADF8EFD7E5 /* Pods_StopwatchTests.framework in Frameworks */,
+				0F0F26D6B7A361AE5B8DFC0A /* Pods_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +269,8 @@
 				C484C083DBF4C85697F7BE65 /* Pods-Stopwatch.release.xcconfig */,
 				96AD90ABA781A131DE8D5D7B /* Pods-UITests.debug.xcconfig */,
 				AFB9CB7FF24ED83649631EC0 /* Pods-UITests.release.xcconfig */,
+				66B3EDD931C564237529A0D3 /* Pods-Tests.debug.xcconfig */,
+				29E3BDFD0ABB90C2BDFCF548 /* Pods-Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -274,6 +281,7 @@
 				7259E1F90EC5308C41FEDFD5 /* Pods_StopwatchTests.framework */,
 				CD6A762482E91DC0F230647F /* Pods_Stopwatch.framework */,
 				F718E5E62C4D19C75B285B02 /* Pods_UITests.framework */,
+				C03CBB96B038202E15986CBA /* Pods_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -428,7 +436,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StopwatchTests/Pods-StopwatchTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
@@ -441,7 +449,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StopwatchTests/Pods-StopwatchTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		62717174BC44AF241F1E72EE /* [CP] Embed Pods Frameworks */ = {
@@ -505,7 +513,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-StopwatchTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -765,7 +773,7 @@
 		};
 		5C2D478A2259FEDA00EB9EBB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B63E9AB1EF63EFD42E7E546F /* Pods-StopwatchTests.debug.xcconfig */;
+			baseConfigurationReference = 66B3EDD931C564237529A0D3 /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -787,7 +795,7 @@
 		};
 		5C2D478B2259FEDA00EB9EBB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7560F3ECC514FB525EF013B /* Pods-StopwatchTests.release.xcconfig */;
+			baseConfigurationReference = 29E3BDFD0ABB90C2BDFCF548 /* Pods-Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
