@@ -73,7 +73,7 @@ jobs:
 
       - run:
           name: Verify that running SwiftFormat doesn't change anything
-          command: ./Pods/SwiftFormat/CommandLineTool/swiftformat --exclude Pods --lint .
+          command: ./Pods/SwiftFormat/CommandLineTool/swiftformat --exclude Pods --lint --verbose .
 
 workflows:
   version: 2
