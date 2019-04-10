@@ -20,7 +20,7 @@ protocol TableDataSource {
 }
 
 class Table: UITableViewController {
-    let dataSource: TableDataSource
+    private let dataSource: TableDataSource
 
     init(dataSource: TableDataSource) {
         self.dataSource = dataSource
@@ -52,7 +52,7 @@ class Table: UITableViewController {
         return dataSource.count
     }
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> Table.Row {
         guard
             let dataPoint = dataSource.lastItem,
             let cell = tableView.dequeueReusableCell(withIdentifier: "Row", for: indexPath as IndexPath) as? Table.Row
