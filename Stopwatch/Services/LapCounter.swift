@@ -1,18 +1,18 @@
 import Foundation
 
-class LapCounter {
+class LapCounter: TableDataSource {
     private var lapNumber = 1
     private var laps: [Lap] = Array()
 
-    var lapCount: Int {
+    var count: Int {
         return lapNumber - 1
     }
 
-    var lastLap: Lap? {
+    var lastItem: TableRowData? {
         return laps.last
     }
 
-    struct Lap {
+    struct Lap: TableRowData {
         let lapNumber: Int
         let duration: TimeInterval
         let endTime: TimeInterval
@@ -22,13 +22,22 @@ class LapCounter {
             self.duration = duration
             self.endTime = endTime
         }
+
+        func getLeftContent() -> String {
+            return "Lap \(lapNumber)"
+        }
+
+        func getRightContent() -> String {
+            return ElapsedTimeDisplay.getElapsedString(elapsed: duration)
+        }
     }
 
-    func record(elapsed: TimeInterval) {
+    func insert(value: Any) {
+        guard let value = value as? TimeInterval else { fatalError("LapCounter.insert only accepts values of type TimeInterval") }
         let lastLapEndTime = laps.last?.endTime ?? 0
-        let lapDuration = elapsed - lastLapEndTime
+        let lapDuration = value - lastLapEndTime
 
-        laps.append(Lap(lapNumber: lapNumber, duration: lapDuration, endTime: elapsed))
+        laps.append(Lap(lapNumber: lapNumber, duration: lapDuration, endTime: value))
         lapNumber += 1
     }
 

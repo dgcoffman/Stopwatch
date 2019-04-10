@@ -28,8 +28,9 @@
 		5C8A3D2E225BE96A00AD138D /* .circleci in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A3D2C225BE96A00AD138D /* .circleci */; };
 		5C944916225D66B90071B966 /* uitest in Resources */ = {isa = PBXBuildFile; fileRef = 5C944915225D66B90071B966 /* uitest */; };
 		5C944918225D69480071B966 /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 5C944917225D69480071B966 /* Gemfile */; };
-		5C97F149225C9CB10049A2C7 /* LapTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C97F148225C9CB10049A2C7 /* LapTable.swift */; };
+		5C97F149225C9CB10049A2C7 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C97F148225C9CB10049A2C7 /* Table.swift */; };
 		5C97F14B225CA6BD0049A2C7 /* lint in Resources */ = {isa = PBXBuildFile; fileRef = 5C97F14A225CA6BD0049A2C7 /* lint */; };
+		5CE113D4225DF36500AEBD68 /* LapTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE113D3225DF36500AEBD68 /* LapTable.swift */; };
 		5CFE5653225C7ACA008D30E6 /* format in Resources */ = {isa = PBXBuildFile; fileRef = 5CFE5652225C7ACA008D30E6 /* format */; };
 		697E78E04A5E3C03839F3FBF /* Pods_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F718E5E62C4D19C75B285B02 /* Pods_UITests.framework */; };
 		6B4BEBCB830DFD22D4213582 /* Pods_Stopwatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6A762482E91DC0F230647F /* Pods_Stopwatch.framework */; };
@@ -95,8 +96,9 @@
 		5C8A3D2C225BE96A00AD138D /* .circleci */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .circleci; sourceTree = "<group>"; };
 		5C944915225D66B90071B966 /* uitest */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = uitest; sourceTree = "<group>"; };
 		5C944917225D69480071B966 /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
-		5C97F148225C9CB10049A2C7 /* LapTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapTable.swift; sourceTree = "<group>"; };
+		5C97F148225C9CB10049A2C7 /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		5C97F14A225CA6BD0049A2C7 /* lint */ = {isa = PBXFileReference; lastKnownFileType = text; path = lint; sourceTree = "<group>"; };
+		5CE113D3225DF36500AEBD68 /* LapTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapTable.swift; sourceTree = "<group>"; };
 		5CFE5652225C7ACA008D30E6 /* format */ = {isa = PBXFileReference; lastKnownFileType = text; path = format; sourceTree = "<group>"; };
 		6BEF1A3ABF8C5866F543C721 /* Pods-Stopwatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stopwatch.debug.xcconfig"; path = "Target Support Files/Pods-Stopwatch/Pods-Stopwatch.debug.xcconfig"; sourceTree = "<group>"; };
 		7259E1F90EC5308C41FEDFD5 /* Pods_StopwatchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StopwatchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,7 +202,8 @@
 			children = (
 				5C4860A0225BC58500F0424F /* Button.swift */,
 				5C4860A2225BCD3600F0424F /* ElapsedTimeDisplay.swift */,
-				5C97F148225C9CB10049A2C7 /* LapTable.swift */,
+				5C97F148225C9CB10049A2C7 /* Table.swift */,
+				5CE113D3225DF36500AEBD68 /* LapTable.swift */,
 			);
 			path = "UI Components";
 			sourceTree = "<group>";
@@ -563,9 +566,10 @@
 				5C2D47612259FED700EB9EBB /* HomeView.swift in Sources */,
 				5C4860A1225BC58500F0424F /* Button.swift in Sources */,
 				5C2D47672259FED700EB9EBB /* Stopwatch.xcdatamodeld in Sources */,
-				5C97F149225C9CB10049A2C7 /* LapTable.swift in Sources */,
+				5C97F149225C9CB10049A2C7 /* Table.swift in Sources */,
 				5C48609C225B538000F0424F /* StyleConstants.swift in Sources */,
 				5C2D475F2259FED700EB9EBB /* AppDelegate.swift in Sources */,
+				5CE113D4225DF36500AEBD68 /* LapTable.swift in Sources */,
 				5C4860A3225BCD3600F0424F /* ElapsedTimeDisplay.swift in Sources */,
 				5C898D42225D09950058D191 /* NoOp.swift in Sources */,
 				5C898D3F225D093A0058D191 /* LapCounter.swift in Sources */,
