@@ -19,12 +19,15 @@ ___
 ***What's happening here?***
 
 **Formatting code**
+
 Execute `Scripts/format` to run [SwiftFormat](https://github.com/nicklockwood/SwiftFormat/) and [SwiftLint](https://github.com/realm/SwiftLint) autocorrect.
 
 **Linters**
+
 Execute `Scripts/lint` to verify that SwiftFormat would produce no code changes, and that code is compliant with SwiftLint rules.
 
 **Unit tests**
+
 Execute `Scripts/unittest` to run unit tests.
 
 Unit tests are written with [Quick](https://github.com/Quick/Quick), a BDD-style testing framework that will look familiar to users of Jasmine or Jest. 
@@ -32,9 +35,11 @@ Unit tests are written with [Quick](https://github.com/Quick/Quick), a BDD-style
 Quick comes with [Nimble](https://github.com/Quick/Nimble), a set of test matchers.
 
 **UI Tests**
+
 Execute `Scripts/uitest` to run UI tests.
 
 **Continuous Integration**
+
 CircleCI [![CircleCI](https://circleci.com/gh/dgcoffman/Stopwatch/tree/master.svg?style=svg)](https://circleci.com/gh/dgcoffman/Stopwatch/tree/master) runs four jobs in parallel:
 
 - SwiftFormat: Verifies that running SwiftFormat would introduce no changes (so the code has already been formatted correctly).

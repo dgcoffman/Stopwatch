@@ -7,7 +7,7 @@ jobs:
 
         steps:
             - checkout:
-                name: Checkout the git repository
+                name: Download the git repository
 
             - run:
                 name: Run bundle install to get the 'trainer' gem
@@ -28,14 +28,15 @@ jobs:
             xcode: '10.2.0'
 
         steps:
-            - checkout
+            - checkout:
+                name: Download the git repository
 
             - run:
-                name: Bundle install
+                name: Run bundle install to get the 'trainer' gem
                 command: bundle install
 
             - run:
-                name: Run unit tests
+                name: Build the app and run uit tests
                 command: Scripts/unittest
 
             - store_test_results:
@@ -49,10 +50,11 @@ jobs:
             - image: dantoml/swiftlint:latest
 
         steps:
-            - checkout
+            - checkout:
+                name: Download the git repository
 
             - run:
-                name: Run SwiftLint
+                name: Run SwiftLint to ensure compliance with lint rules
                 command: mkdir test-results test-results/swiftlint && swiftlint lint Stopwatch StopwatchTests StopwatchUITests --reporter junit | tee test-results/swiftlint/result.xml
 
             - store_artifacts:
@@ -66,9 +68,11 @@ jobs:
             xcode: '10.2.0'
 
         steps:
-            - checkout
+            - checkout:
+                name: Download the git repository
+
             - run:
-                name: Verify SwiftFormat does not introduce changes
+                name: Verify that running SwiftFormat doesn't change anything
                 command: ./Pods/SwiftFormat/CommandLineTool/swiftformat --exclude Pods --lint .
 
 workflows:
