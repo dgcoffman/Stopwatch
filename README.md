@@ -48,3 +48,23 @@ CircleCI [![CircleCI](https://circleci.com/gh/dgcoffman/Stopwatch/tree/master.sv
 - UITest: Verifies that UI tests pass.
 
 UnitTest and UITest both use `xcodebuild test`, with [xcbeautify](https://github.com/thii/xcbeautify) to produce attractive, human-readable output. The human-readable output is _not_ used to to inform CircleCI of test results -- intead [trainer](https://github.com/xcpretty/trainer) produces a JUnit formatted XML file from the TestSummaries.plist file that `xcodebuild test` produces. 
+
+
+
+**Things I tried but didn't go with**
+
+1. I tried adding danger-swift and it didn't work https://github.com/danger/swift/issues/221 at all
+2. I tried running tests with xctool and got it half-working (it ran the unit, but not UI tests), but ultimately that failed https://github.com/facebook/xctool/issues/764
+3. I started with NSLayoutAnchor, then [switched to SnapKit](https://github.com/dgcoffman/Stopwatch/commit/dda9c8a2d9df7852df6f6fac6d3c5ac9608bfdfb#diff-53648d015562678943c6c6c74fb4e321L113). This was a mistake. NSLayoutAnchor is fine.
+4. I used xcpretty for a while, then switched to using xcbeautify for xcodebuild human-readability, with trainer for producing machine-readable JUnit-formatted XML. I think this is better.
+5. I tried running formatters (SwiftFormat, Swimat) in Xcode, but it didn't work well.
+6. I tried to bring in Komondor to add a pre-commit git hook to run SwiftFormat, but decided it was gross and people can make their own from the instructions at https://github.com/nicklockwood/SwiftFormat/#git-pre-commit-hook
+7. I started out running `pod install` in CI, and it took FOREVER, so I figured out how to [fetch CocoaPods Specs from CircleCI's S3 bucket](https://github.com/dgcoffman/Stopwatch/commit/85d26add617461f3732f1613dcd2354aa60e78ff). But in the end, I just checked in all my pods and stopped running `pod install` entirely!
+8. If you `brew install` something in a Circle job, Homebrew will try to update itself first! You can disable that to save time: https://github.com/dgcoffman/Stopwatch/commit/3dce2977c58acba7bc03515dd7c1c978a5b47b73
+
+**Other stuff I figured out**
+1. xcodebuild insists on writing warnings to stderr, which makes them show up in Circle's output. Also Swift code in pods produce _a lot_ of errors. You can supress them: https://github.com/dgcoffman/Stopwatch/commit/e6f1aad14b0cba591f7cda9c47ce813a0a624351#diff-4a25b996826623c4a3a4910f47f10c30R6
+2. Running `pod install` produces 2 warnings for each target by default. Something about a conflict with the project setting ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES. You can mark the project setting as $(inherited) to fix this. https://github.com/dgcoffman/Stopwatch/commit/759b2dc64fbd69904b00be1b3e11c5897f2ad608
+3. Facebook's xctool doesn't support XCUITests. No, the is no way to make it work. Do not try.
+4. xcodebuild does have a -quiet flag, which stops it from writing out every file that it compiles. It doesn't, however, stop it from writing all compile warnings to stderr! https://github.com/dgcoffman/Stopwatch/commit/813df0d9f81ffeb2c3183a673dbed1705d1352a2
+5. You do have to [set a "Development Team" in project settings](https://github.com/dgcoffman/Stopwatch/commit/5f3736882db766a2de9504acc7b9a1a331713a92#diff-e266983aaf3d6ff04f2126ca1ec13686R669), or xcodebuild will complain about it occasionally.
