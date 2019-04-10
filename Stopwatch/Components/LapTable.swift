@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 class LapTable: Table {
-    let counter: LapCounter
+    private let counter: LapCounter
 
     init(dataSource: LapCounter = LapCounter()) {
         // Hold a more narrowly-typed reference to the dataSource here
