@@ -6,14 +6,15 @@ jobs:
             xcode: '10.2.0'
 
         steps:
-            - checkout
+            - checkout:
+                name: Checkout the git repository
 
             - run:
-                name: Bundle install
+                name: Run bundle install to get the 'trainer' gem
                 command: bundle install
 
             - run:
-                name: Build and Run UI tests
+                name: Build the app and run UI tests
                 command: Scripts/uitest
 
             - store_test_results:
