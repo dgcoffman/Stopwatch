@@ -61,6 +61,7 @@ UnitTest and UITest both use `xcodebuild test`, with [xcbeautify](https://github
 6. I tried to bring in Komondor to add a pre-commit git hook to run SwiftFormat, but decided it was gross and people can make their own from the instructions at https://github.com/nicklockwood/SwiftFormat/#git-pre-commit-hook
 7. I started out running `pod install` in CI, and it took FOREVER, so I figured out how to [fetch CocoaPods Specs from CircleCI's S3 bucket](https://github.com/dgcoffman/Stopwatch/commit/85d26add617461f3732f1613dcd2354aa60e78ff). But in the end, I just checked in all my pods and stopped running `pod install` entirely!
 8. If you `brew install` something in a Circle job, Homebrew will try to update itself first! You can disable that to save time: https://github.com/dgcoffman/Stopwatch/commit/3dce2977c58acba7bc03515dd7c1c978a5b47b73
+9. I tried making an entirely distinct target and scheme specifically to disable warnings from the Swift compiler for CI builds -- but it didn't work at all!! So I removed it. https://github.com/dgcoffman/Stopwatch/commit/7fd60cc82cb3d2db87ce1ac389b43aaf8589a2cf
 
 **Other stuff I figured out**
 1. xcodebuild insists on writing warnings to stderr, which makes them show up in Circle's output. Also Swift code in pods produce _a lot_ of errors. You can supress them: https://github.com/dgcoffman/Stopwatch/commit/e6f1aad14b0cba591f7cda9c47ce813a0a624351#diff-4a25b996826623c4a3a4910f47f10c30R6
