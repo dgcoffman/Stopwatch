@@ -17,7 +17,7 @@ target 'Stopwatch' do
     pod 'SnapKit', '~> 4.0.0'
 end
 
-target 'StopwatchTests' do
+target 'Tests' do
     testing_pods
 end
 

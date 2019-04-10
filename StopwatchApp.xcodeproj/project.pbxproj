@@ -77,7 +77,7 @@
 		5C2D47662259FED700EB9EBB /* Stopwatch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stopwatch.xcdatamodel; sourceTree = "<group>"; };
 		5C2D47682259FEDA00EB9EBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C2D476D2259FEDA00EB9EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C2D47722259FEDA00EB9EBB /* StopwatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopwatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C2D47722259FEDA00EB9EBB /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C2D47762259FEDA00EB9EBB /* StopwatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchTests.swift; sourceTree = "<group>"; };
 		5C2D47782259FEDA00EB9EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C48609B225B538000F0424F /* StyleConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleConstants.swift; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 				5C4860A4225BD07F00F0424F /* Podfile */,
 				5C48609D225BC4D400F0424F /* README.md */,
 				5C2D475D2259FED700EB9EBB /* Stopwatch */,
-				5C2D47752259FEDA00EB9EBB /* StopwatchTests */,
+				5C2D47752259FEDA00EB9EBB /* Tests */,
 				5C7D22B5225D3C9A00149A5A /* UITests */,
 				5C2D475C2259FED700EB9EBB /* Products */,
 				6C0E6FF5BC75104A0B2ECF36 /* Pods */,
@@ -165,7 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				5C2D475B2259FED700EB9EBB /* Stopwatch.app */,
-				5C2D47722259FEDA00EB9EBB /* StopwatchTests.xctest */,
+				5C2D47722259FEDA00EB9EBB /* Tests.xctest */,
 				5C7D22B4225D3C9A00149A5A /* UITests.xctest */,
 			);
 			name = Products;
@@ -188,13 +188,13 @@
 			path = Stopwatch;
 			sourceTree = "<group>";
 		};
-		5C2D47752259FEDA00EB9EBB /* StopwatchTests */ = {
+		5C2D47752259FEDA00EB9EBB /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				5C2D47762259FEDA00EB9EBB /* StopwatchTests.swift */,
 				5C2D47782259FEDA00EB9EBB /* Info.plist */,
 			);
-			path = StopwatchTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		5C48609F225BC57000F0424F /* UI Components */ = {
@@ -300,9 +300,9 @@
 			productReference = 5C2D475B2259FED700EB9EBB /* Stopwatch.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5C2D47712259FEDA00EB9EBB /* StopwatchTests */ = {
+		5C2D47712259FEDA00EB9EBB /* Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C2D47892259FEDA00EB9EBB /* Build configuration list for PBXNativeTarget "StopwatchTests" */;
+			buildConfigurationList = 5C2D47892259FEDA00EB9EBB /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
 				AC2DC26A0A330E243E282749 /* [CP] Check Pods Manifest.lock */,
 				5C2D476E2259FEDA00EB9EBB /* Sources */,
@@ -315,9 +315,9 @@
 			dependencies = (
 				5C2D47742259FEDA00EB9EBB /* PBXTargetDependency */,
 			);
-			name = StopwatchTests;
+			name = Tests;
 			productName = StopwatchTests;
-			productReference = 5C2D47722259FEDA00EB9EBB /* StopwatchTests.xctest */;
+			productReference = 5C2D47722259FEDA00EB9EBB /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		5C7D22B3225D3C9A00149A5A /* UITests */ = {
@@ -378,7 +378,7 @@
 			projectRoot = "";
 			targets = (
 				5C2D475A2259FED700EB9EBB /* Stopwatch */,
-				5C2D47712259FEDA00EB9EBB /* StopwatchTests */,
+				5C2D47712259FEDA00EB9EBB /* Tests */,
 				5C7D22B3225D3C9A00149A5A /* UITests */,
 			);
 		};
@@ -876,7 +876,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C2D47892259FEDA00EB9EBB /* Build configuration list for PBXNativeTarget "StopwatchTests" */ = {
+		5C2D47892259FEDA00EB9EBB /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C2D478A2259FEDA00EB9EBB /* Debug */,

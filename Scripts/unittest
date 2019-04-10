@@ -6,7 +6,7 @@ BEAUTIFY="$ROOT_DIR/Pods/xcbeautify/xcbeautify"
 
 rm -rf $ROOT_DIR/TestResults
 
-xcodebuild -workspace StopwatchApp.xcworkspace -scheme Stopwatch -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.2' test -only-testing:StopwatchTests -resultBundlePath TestResults | $BEAUTIFY
+xcodebuild -workspace StopwatchApp.xcworkspace -scheme Stopwatch -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.2' test -only-testing:Tests -resultBundlePath TestResults | $BEAUTIFY
 
 cd "$ROOT_DIR/TestResults"
 trainer

@@ -1,85 +1,85 @@
 version: 2
 
 jobs:
-    UITest:
-        macos:
-            xcode: '10.2.0'
+  UITest:
+    macos:
+      xcode: '10.2.0'
 
-        steps:
-            - checkout:
-                name: Download the git repository
+    steps:
+      - checkout:
+          name: Download the git repository
 
-            - run:
-                name: Run bundle install to get the 'trainer' gem
-                command: bundle install
+      - run:
+          name: Run bundle install to get the 'trainer' gem
+          command: bundle install
 
-            - run:
-                name: Build the app and run UI tests
-                command: Scripts/uitest
+      - run:
+          name: Build the app and run UI tests
+          command: Scripts/uitest
 
-            - store_test_results:
-                path: TestResults
+      - store_test_results:
+          path: TestResults
 
-            - store_artifacts:
-                path: TestResults
+      - store_artifacts:
+          path: TestResults
 
-    UnitTest:
-        macos:
-            xcode: '10.2.0'
+  UnitTest:
+    macos:
+      xcode: '10.2.0'
 
-        steps:
-            - checkout:
-                name: Download the git repository
+    steps:
+      - checkout:
+          name: Download the git repository
 
-            - run:
-                name: Run bundle install to get the 'trainer' gem
-                command: bundle install
+      - run:
+          name: Run bundle install to get the 'trainer' gem
+          command: bundle install
 
-            - run:
-                name: Build the app and run unit tests
-                command: Scripts/unittest
+      - run:
+          name: Build the app and run unit tests
+          command: Scripts/unittest
 
-            - store_test_results:
-                path: TestResults
+      - store_test_results:
+          path: TestResults
 
-            - store_artifacts:
-                path: TestResults
+      - store_artifacts:
+          path: TestResults
 
-    SwiftLint:
-        docker:
-            - image: dantoml/swiftlint:latest
+  SwiftLint:
+    docker:
+      - image: dantoml/swiftlint:latest
 
-        steps:
-            - checkout:
-                name: Download the git repository
+    steps:
+      - checkout:
+          name: Download the git repository
 
-            - run:
-                name: Run SwiftLint to ensure compliance with lint rules
-                command: mkdir test-results test-results/swiftlint && swiftlint lint Stopwatch StopwatchTests StopwatchUITests --reporter junit | tee test-results/swiftlint/result.xml
+      - run:
+          name: Run SwiftLint to ensure compliance with lint rules
+          command: mkdir test-results test-results/swiftlint && swiftlint lint Stopwatch Tests UITests --reporter junit | tee test-results/swiftlint/result.xml
 
-            - store_artifacts:
-                path: test-results
+      - store_artifacts:
+          path: test-results
 
-            - store_test_results:
-                path: test-results
+      - store_test_results:
+          path: test-results
 
-    SwiftFormat:
-        macos:
-            xcode: '10.2.0'
+  SwiftFormat:
+    macos:
+      xcode: '10.2.0'
 
-        steps:
-            - checkout:
-                name: Download the git repository
+    steps:
+      - checkout:
+          name: Download the git repository
 
-            - run:
-                name: Verify that running SwiftFormat doesn't change anything
-                command: ./Pods/SwiftFormat/CommandLineTool/swiftformat --exclude Pods --lint .
+      - run:
+          name: Verify that running SwiftFormat doesn't change anything
+          command: ./Pods/SwiftFormat/CommandLineTool/swiftformat --exclude Pods --lint .
 
 workflows:
-    version: 2
-    build-test-lint:
-        jobs:
-            - SwiftLint
-            - SwiftFormat
-            - UnitTest
-            - UITest
+  version: 2
+  build-test-lint:
+    jobs:
+      - SwiftLint
+      - SwiftFormat
+      - UnitTest
+      - UITest
