@@ -70,8 +70,13 @@ UnitTest and UITest both use `xcodebuild test`, with [xcbeautify](https://github
 3. Facebook's xctool doesn't support XCUITests. No, the is no way to make it work. Do not try.
 4. xcodebuild does have a -quiet flag, which stops it from writing out every file that it compiles. It doesn't, however, stop it from writing all compile warnings to stderr! https://github.com/dgcoffman/Stopwatch/commit/813df0d9f81ffeb2c3183a673dbed1705d1352a2
 5. You do have to [set a "Development Team" in project settings](https://github.com/dgcoffman/Stopwatch/commit/5f3736882db766a2de9504acc7b9a1a331713a92#diff-e266983aaf3d6ff04f2126ca1ec13686R669), or xcodebuild will complain about it occasionally.
-6. xcodebuild takes an argument like `-resultBundlePath TestResults` that causes it to write a bunch of test run metadata until the TestResults directory in your project. This is essential because you want to upload that to Circle as a test artifact, and use the TestSummaries.plist file in there as the source for your JUnit-formatted XML (the thing Circle uses to show you a test summary). This is important!
+6. xcodebuild takes an argument `-resultBundlePath TestResults` that causes it to write a bunch of test run metadata into the TestResults directory in your project. This is essential because you want to upload that to Circle as a test artifact, and use the TestSummaries.plist file in there as the source for your JUnit-formatted XML (the thing Circle uses to show you a test summary). This is important!
 7. SwiftLint has an `autocorrect` command and SwiftFormat has a `lint` command, so these tools are basically inverse of each other. But you should use them both, since SwiftLint's format is not sufficiently opinionated.
-
+8. You might notice that the CI SwiftLint job "Test Summary" section reports lint *warnings* as failures. Here's what's happening there: 
+    1. CircleCI’s Test Summary feature appears to only read JUnit-formatted XML
+    2. SwiftLint has a reporter that can produce JUnit-formatted XML
+    3. JUnit’s test report format has no concept of severity levels like “Warning”
+    4. So CircleCI shows all SwiftLint warnings as errors
+    5. Job status (success or failure) is determined by SwiftList’s exit code, which works fine. This is just a visual issue in the Test Summary.
 
 See also my initial research and thoughts about the iOS|Swift ecosystem and tools: https://gist.github.com/dgcoffman/620cd50ce94bdd03b78f67179e92de1a
