@@ -6,7 +6,7 @@ class UITests: XCTestCase {
         app.launch()
     }
 
-    func testExample() {
+    func testStopwatchStartLapStopResetFlow() {
         let app = XCUIApplication()
         let startStopButton = app.buttons["startStopButton"]
         let lapButton = app.buttons["lapButton"]
