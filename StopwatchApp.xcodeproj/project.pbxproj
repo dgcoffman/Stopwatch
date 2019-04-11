@@ -14,7 +14,7 @@
 		5C2D47672259FED700EB9EBB /* Stopwatch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47652259FED700EB9EBB /* Stopwatch.xcdatamodeld */; };
 		5C2D47692259FEDA00EB9EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2D47682259FEDA00EB9EBB /* Assets.xcassets */; };
 		5C2D47772259FEDA00EB9EBB /* Stopwatch.test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47762259FEDA00EB9EBB /* Stopwatch.test.swift */; };
-		5C348A7B225E60DA0055985F /* ElapsedTimeDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C348A7A225E60DA0055985F /* ElapsedTimeDisplay.swift */; };
+		5C348A7B225E60DA0055985F /* ElapsedTimeDisplay.test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C348A7A225E60DA0055985F /* ElapsedTimeDisplay.test.swift */; };
 		5C348A7D225E61CA0055985F /* Table.test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C348A7C225E61CA0055985F /* Table.test.swift */; };
 		5C348A7F225E63760055985F /* LapTable.test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C348A7E225E63760055985F /* LapTable.test.swift */; };
 		5C48609C225B538000F0424F /* StyleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C48609B225B538000F0424F /* StyleConstants.swift */; };
@@ -23,7 +23,7 @@
 		5C4860A3225BCD3600F0424F /* ElapsedTimeDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4860A2225BCD3600F0424F /* ElapsedTimeDisplay.swift */; };
 		5C4860A5225BD08000F0424F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5C4860A4225BD07F00F0424F /* Podfile */; };
 		5C7D22C0225D3EBD00149A5A /* Pods_UITests.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F718E5E62C4D19C75B285B02 /* Pods_UITests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5C7D22C3225D3FBD00149A5A /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7D22C1225D3FBD00149A5A /* Tests.swift */; };
+		5C7D22C3225D3FBD00149A5A /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7D22C1225D3FBD00149A5A /* UITests.swift */; };
 		5C7D22C5225D482F00149A5A /* unittest in Resources */ = {isa = PBXBuildFile; fileRef = 5C7D22C4225D482F00149A5A /* unittest */; };
 		5C898D39225CA9870058D191 /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = 5C898D38225CA9860058D191 /* .swift-version */; };
 		5C898D3F225D093A0058D191 /* LapCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C898D3E225D093A0058D191 /* LapCounter.swift */; };
@@ -85,7 +85,7 @@
 		5C2D47722259FEDA00EB9EBB /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C2D47762259FEDA00EB9EBB /* Stopwatch.test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.test.swift; sourceTree = "<group>"; };
 		5C2D47782259FEDA00EB9EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C348A7A225E60DA0055985F /* ElapsedTimeDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElapsedTimeDisplay.swift; sourceTree = "<group>"; };
+		5C348A7A225E60DA0055985F /* ElapsedTimeDisplay.test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElapsedTimeDisplay.test.swift; sourceTree = "<group>"; };
 		5C348A7C225E61CA0055985F /* Table.test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.test.swift; sourceTree = "<group>"; };
 		5C348A7E225E63760055985F /* LapTable.test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapTable.test.swift; sourceTree = "<group>"; };
 		5C48609B225B538000F0424F /* StyleConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleConstants.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		5C4860A4225BD07F00F0424F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5C7D22B4225D3C9A00149A5A /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C7D22B8225D3C9A00149A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C7D22C1225D3FBD00149A5A /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		5C7D22C1225D3FBD00149A5A /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
 		5C7D22C4225D482F00149A5A /* unittest */ = {isa = PBXFileReference; lastKnownFileType = text; path = unittest; sourceTree = "<group>"; };
 		5C898D38225CA9860058D191 /* .swift-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
 		5C898D3E225D093A0058D191 /* LapCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapCounter.swift; sourceTree = "<group>"; };
@@ -219,7 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				5C7D22B8225D3C9A00149A5A /* Info.plist */,
-				5C7D22C1225D3FBD00149A5A /* Tests.swift */,
+				5C7D22C1225D3FBD00149A5A /* UITests.swift */,
 			);
 			path = UITests;
 			sourceTree = "<group>";
@@ -270,7 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				5CE113DC225E5EB000AEBD68 /* Button.test.swift */,
-				5C348A7A225E60DA0055985F /* ElapsedTimeDisplay.swift */,
+				5C348A7A225E60DA0055985F /* ElapsedTimeDisplay.test.swift */,
 				5C348A7C225E61CA0055985F /* Table.test.swift */,
 				5C348A7E225E63760055985F /* LapTable.test.swift */,
 			);
@@ -618,7 +618,7 @@
 				5CE113D9225E5D2000AEBD68 /* LapCounter.test.swift in Sources */,
 				5C348A7F225E63760055985F /* LapTable.test.swift in Sources */,
 				5CE113DD225E5EB000AEBD68 /* Button.test.swift in Sources */,
-				5C348A7B225E60DA0055985F /* ElapsedTimeDisplay.swift in Sources */,
+				5C348A7B225E60DA0055985F /* ElapsedTimeDisplay.test.swift in Sources */,
 				5C2D47772259FEDA00EB9EBB /* Stopwatch.test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -627,7 +627,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C7D22C3225D3FBD00149A5A /* Tests.swift in Sources */,
+				5C7D22C3225D3FBD00149A5A /* UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
