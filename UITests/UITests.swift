@@ -1,4 +1,5 @@
 import XCTest
+import XCTest
 
 // https://www.hackingwithswift.com/articles/83/how-to-test-your-user-interface-using-xcode
 // https://www.hackingwithswift.com/articles/148/xcode-ui-testing-cheat-sheet
@@ -10,6 +11,7 @@ class UITests: XCTestCase {
         let app = XCUIApplication()
 
         [].map({ } )
+        NSNumber() as! Int
 
         // We pass a launch argument that can be read by the running app:
         //
