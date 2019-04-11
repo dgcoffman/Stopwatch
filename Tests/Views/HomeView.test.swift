@@ -3,18 +3,18 @@ import Quick
 
 @testable import Stopwatch
 
-class HomeViewSpec: QuickSpec {
+class StopwatchViewSpec: QuickSpec {
     override func spec() {
-        describe("HomeView") {
-            var homeView: HomeView!
+        describe("StopwatchView") {
+            var stopwatchView: StopwatchView!
 
             beforeEach {
-                homeView = HomeView()
+                stopwatchView = StopwatchView()
             }
 
             describe("initial state") {
                 it("exists") {
-                    expect(homeView).toNot(beNil())
+                    expect(stopwatchView).toNot(beNil())
                 }
             }
         }

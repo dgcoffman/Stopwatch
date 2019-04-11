@@ -3,7 +3,7 @@ import UIKit
 
 let defaultTimeInterval = 0.001
 
-class HomeView: UIViewController {
+class StopwatchView: UIViewController {
     private let stopwatch: Stopwatch
     private let laps: LapTable
 
@@ -12,7 +12,7 @@ class HomeView: UIViewController {
     private let startStopButton: Button = {
         let button = Button(text: "Start")
         button.addTarget(self, action: #selector(startStopwatch), for: .touchUpInside)
-        button.accessibilityIdentifier = "startStopButton"
+        button.accessibilityIdentifier = "startStopButton" // put this in the constructor
         return button
     }()
 
