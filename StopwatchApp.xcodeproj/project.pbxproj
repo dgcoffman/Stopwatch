@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		0F0F26D6B7A361AE5B8DFC0A /* Pods_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C03CBB96B038202E15986CBA /* Pods_Tests.framework */; };
 		5C01570B225B385D00260B2B /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C01570A225B385D00260B2B /* Stopwatch.swift */; };
+		5C0F596C225FCFF900DB3777 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F596B225FCFF900DB3777 /* TimerView.swift */; };
+		5C0F596E225FD87500DB3777 /* GlobalNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F596D225FD87500DB3777 /* GlobalNav.swift */; };
 		5C2D475F2259FED700EB9EBB /* EntryPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D475E2259FED700EB9EBB /* EntryPoint.swift */; };
-		5C2D47612259FED700EB9EBB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47602259FED700EB9EBB /* HomeView.swift */; };
+		5C2D47612259FED700EB9EBB /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47602259FED700EB9EBB /* StopwatchView.swift */; };
 		5C2D47672259FED700EB9EBB /* Stopwatch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47652259FED700EB9EBB /* Stopwatch.xcdatamodeld */; };
 		5C2D47692259FEDA00EB9EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2D47682259FEDA00EB9EBB /* Assets.xcassets */; };
 		5C2D47772259FEDA00EB9EBB /* Stopwatch.test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47762259FEDA00EB9EBB /* Stopwatch.test.swift */; };
@@ -36,10 +38,11 @@
 		5C97F14B225CA6BD0049A2C7 /* lint in Resources */ = {isa = PBXBuildFile; fileRef = 5C97F14A225CA6BD0049A2C7 /* lint */; };
 		5CE113D4225DF36500AEBD68 /* LapTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE113D3225DF36500AEBD68 /* LapTable.swift */; };
 		5CE113D9225E5D2000AEBD68 /* LapCounter.test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE113D8225E5D2000AEBD68 /* LapCounter.test.swift */; };
-		5CE113DB225E5DBB00AEBD68 /* HomeView.test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE113DA225E5DBB00AEBD68 /* HomeView.test.swift */; };
+		5CE113DB225E5DBB00AEBD68 /* StopwatchView.test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE113DA225E5DBB00AEBD68 /* StopwatchView.test.swift */; };
 		5CE113DD225E5EB000AEBD68 /* Button.test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE113DC225E5EB000AEBD68 /* Button.test.swift */; };
 		5CFE5653225C7ACA008D30E6 /* format in Resources */ = {isa = PBXBuildFile; fileRef = 5CFE5652225C7ACA008D30E6 /* format */; };
 		697E78E04A5E3C03839F3FBF /* Pods_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F718E5E62C4D19C75B285B02 /* Pods_UITests.framework */; };
+		C2F613767B2D7CF81F4C49D4 /* Pods_Stopwatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C4A74388656EC9BAA0A9FE2 /* Pods_Stopwatch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,9 +79,11 @@
 		29E3BDFD0ABB90C2BDFCF548 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5C01570A225B385D00260B2B /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		5C01570C225B3E8C00260B2B /* Prototypes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Prototypes.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5C0F596B225FCFF900DB3777 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		5C0F596D225FD87500DB3777 /* GlobalNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalNav.swift; sourceTree = "<group>"; };
 		5C2D475B2259FED700EB9EBB /* Stopwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stopwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C2D475E2259FED700EB9EBB /* EntryPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryPoint.swift; sourceTree = "<group>"; };
-		5C2D47602259FED700EB9EBB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5C2D47602259FED700EB9EBB /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
 		5C2D47662259FED700EB9EBB /* Stopwatch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stopwatch.xcdatamodel; sourceTree = "<group>"; };
 		5C2D47682259FEDA00EB9EBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C2D476D2259FEDA00EB9EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,11 +113,12 @@
 		5C97F14A225CA6BD0049A2C7 /* lint */ = {isa = PBXFileReference; lastKnownFileType = text; path = lint; sourceTree = "<group>"; };
 		5CE113D3225DF36500AEBD68 /* LapTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapTable.swift; sourceTree = "<group>"; };
 		5CE113D8225E5D2000AEBD68 /* LapCounter.test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapCounter.test.swift; sourceTree = "<group>"; };
-		5CE113DA225E5DBB00AEBD68 /* HomeView.test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.test.swift; sourceTree = "<group>"; };
+		5CE113DA225E5DBB00AEBD68 /* StopwatchView.test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.test.swift; sourceTree = "<group>"; };
 		5CE113DC225E5EB000AEBD68 /* Button.test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.test.swift; sourceTree = "<group>"; };
 		5CFE5652225C7ACA008D30E6 /* format */ = {isa = PBXFileReference; lastKnownFileType = text; path = format; sourceTree = "<group>"; };
 		66B3EDD931C564237529A0D3 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6BEF1A3ABF8C5866F543C721 /* Pods-Stopwatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stopwatch.debug.xcconfig"; path = "Target Support Files/Pods-Stopwatch/Pods-Stopwatch.debug.xcconfig"; sourceTree = "<group>"; };
+		6C4A74388656EC9BAA0A9FE2 /* Pods_Stopwatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stopwatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96AD90ABA781A131DE8D5D7B /* Pods-UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITests.debug.xcconfig"; path = "Target Support Files/Pods-UITests/Pods-UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AFB9CB7FF24ED83649631EC0 /* Pods-UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITests.release.xcconfig"; path = "Target Support Files/Pods-UITests/Pods-UITests.release.xcconfig"; sourceTree = "<group>"; };
 		C03CBB96B038202E15986CBA /* Pods_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2F613767B2D7CF81F4C49D4 /* Pods_Stopwatch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +234,9 @@
 		5C898D3C225D04780058D191 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5C2D47602259FED700EB9EBB /* HomeView.swift */,
+				5C2D47602259FED700EB9EBB /* StopwatchView.swift */,
+				5C0F596B225FCFF900DB3777 /* TimerView.swift */,
+				5C0F596D225FD87500DB3777 /* GlobalNav.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,7 +270,7 @@
 		5CE113D6225E5CE100AEBD68 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5CE113DA225E5DBB00AEBD68 /* HomeView.test.swift */,
+				5CE113DA225E5DBB00AEBD68 /* StopwatchView.test.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -306,6 +315,7 @@
 			children = (
 				F718E5E62C4D19C75B285B02 /* Pods_UITests.framework */,
 				C03CBB96B038202E15986CBA /* Pods_Tests.framework */,
+				6C4A74388656EC9BAA0A9FE2 /* Pods_Stopwatch.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -595,14 +605,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C2D47612259FED700EB9EBB /* HomeView.swift in Sources */,
+				5C2D47612259FED700EB9EBB /* StopwatchView.swift in Sources */,
 				5C4860A1225BC58500F0424F /* Button.swift in Sources */,
 				5C2D47672259FED700EB9EBB /* Stopwatch.xcdatamodeld in Sources */,
+				5C0F596C225FCFF900DB3777 /* TimerView.swift in Sources */,
 				5C97F149225C9CB10049A2C7 /* Table.swift in Sources */,
 				5C48609C225B538000F0424F /* StyleConstants.swift in Sources */,
 				5C2D475F2259FED700EB9EBB /* EntryPoint.swift in Sources */,
 				5CE113D4225DF36500AEBD68 /* LapTable.swift in Sources */,
 				5C4860A3225BCD3600F0424F /* ElapsedTimeDisplay.swift in Sources */,
+				5C0F596E225FD87500DB3777 /* GlobalNav.swift in Sources */,
 				5C898D42225D09950058D191 /* NoOp.swift in Sources */,
 				5C898D3F225D093A0058D191 /* LapCounter.swift in Sources */,
 				5C01570B225B385D00260B2B /* Stopwatch.swift in Sources */,
@@ -613,7 +625,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CE113DB225E5DBB00AEBD68 /* HomeView.test.swift in Sources */,
+				5CE113DB225E5DBB00AEBD68 /* StopwatchView.test.swift in Sources */,
 				5C348A7D225E61CA0055985F /* Table.test.swift in Sources */,
 				5CE113D9225E5D2000AEBD68 /* LapCounter.test.swift in Sources */,
 				5C348A7F225E63760055985F /* LapTable.test.swift in Sources */,
