@@ -55,7 +55,7 @@ jobs:
 
       - run:
           name: Run SwiftLint to ensure compliance with lint rules
-          command: mkdir test-results test-results/swiftlint && swiftlint lint Stopwatch Tests UITests --reporter junit | tee test-results/swiftlint/result.xml
+          command: mkdir test-results test-results/swiftlint && swiftlint lint Stopwatch Tests UITests --reporter json | tee test-results/swiftlint/result.xml
 
       - store_artifacts:
           path: test-results
