@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0F0F26D6B7A361AE5B8DFC0A /* Pods_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C03CBB96B038202E15986CBA /* Pods_Tests.framework */; };
 		5C01570B225B385D00260B2B /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C01570A225B385D00260B2B /* Stopwatch.swift */; };
-		5C2D475F2259FED700EB9EBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D475E2259FED700EB9EBB /* AppDelegate.swift */; };
+		5C2D475F2259FED700EB9EBB /* EntryPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D475E2259FED700EB9EBB /* EntryPoint.swift */; };
 		5C2D47612259FED700EB9EBB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47602259FED700EB9EBB /* HomeView.swift */; };
 		5C2D47672259FED700EB9EBB /* Stopwatch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C2D47652259FED700EB9EBB /* Stopwatch.xcdatamodeld */; };
 		5C2D47692259FEDA00EB9EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2D47682259FEDA00EB9EBB /* Assets.xcassets */; };
@@ -77,7 +77,7 @@
 		5C01570A225B385D00260B2B /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		5C01570C225B3E8C00260B2B /* Prototypes.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Prototypes.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5C2D475B2259FED700EB9EBB /* Stopwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stopwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C2D475E2259FED700EB9EBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5C2D475E2259FED700EB9EBB /* EntryPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryPoint.swift; sourceTree = "<group>"; };
 		5C2D47602259FED700EB9EBB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5C2D47662259FED700EB9EBB /* Stopwatch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stopwatch.xcdatamodel; sourceTree = "<group>"; };
 		5C2D47682259FEDA00EB9EBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -184,7 +184,7 @@
 				5C898D3C225D04780058D191 /* Views */,
 				5C48609F225BC57000F0424F /* Components */,
 				5C01570C225B3E8C00260B2B /* Prototypes.playground */,
-				5C2D475E2259FED700EB9EBB /* AppDelegate.swift */,
+				5C2D475E2259FED700EB9EBB /* EntryPoint.swift */,
 				5C2D47682259FEDA00EB9EBB /* Assets.xcassets */,
 				5C2D476D2259FEDA00EB9EBB /* Info.plist */,
 				5C2D47652259FED700EB9EBB /* Stopwatch.xcdatamodeld */,
@@ -600,7 +600,7 @@
 				5C2D47672259FED700EB9EBB /* Stopwatch.xcdatamodeld in Sources */,
 				5C97F149225C9CB10049A2C7 /* Table.swift in Sources */,
 				5C48609C225B538000F0424F /* StyleConstants.swift in Sources */,
-				5C2D475F2259FED700EB9EBB /* AppDelegate.swift in Sources */,
+				5C2D475F2259FED700EB9EBB /* EntryPoint.swift in Sources */,
 				5CE113D4225DF36500AEBD68 /* LapTable.swift in Sources */,
 				5C4860A3225BCD3600F0424F /* ElapsedTimeDisplay.swift in Sources */,
 				5C898D42225D09950058D191 /* NoOp.swift in Sources */,
