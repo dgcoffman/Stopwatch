@@ -12,18 +12,21 @@ class HomeView: UIViewController {
     private let startStopButton: Button = {
         let button = Button(text: "Start")
         button.addTarget(self, action: #selector(startStopwatch), for: .touchUpInside)
+        button.accessibilityIdentifier = "startStopButton"
         return button
     }()
 
     private let resetButton: Button = {
         let button = Button(text: "Reset")
         button.addTarget(self, action: #selector(reset), for: .touchUpInside)
+        button.accessibilityIdentifier = "resetButton"
         return button
     }()
 
     private let lapButton: Button = {
         let button = Button(text: "Lap")
         button.addTarget(self, action: #selector(recordLapTime), for: .touchUpInside)
+        button.accessibilityIdentifier = "lapButton"
         return button
     }()
 
