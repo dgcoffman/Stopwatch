@@ -1,7 +1,7 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class EntryPoint: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_: UIApplication,
