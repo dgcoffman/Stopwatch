@@ -27,9 +27,10 @@ class ElapsedTimeDisplay: UILabel {
         }
     }
 
-    init() {
+    init(accessibilityIdentifier: String = "elapsedTimeDisplay") {
         super.init(frame: CGRect.zero)
 
+        self.accessibilityIdentifier = accessibilityIdentifier
         textColor = Color.white
         shadowColor = .black
         shadowOffset = CGSize(width: 2, height: 2)
