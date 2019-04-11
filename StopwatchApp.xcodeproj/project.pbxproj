@@ -42,6 +42,7 @@
 		5CE113DD225E5EB000AEBD68 /* Button.test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE113DC225E5EB000AEBD68 /* Button.test.swift */; };
 		5CFE5653225C7ACA008D30E6 /* format in Resources */ = {isa = PBXBuildFile; fileRef = 5CFE5652225C7ACA008D30E6 /* format */; };
 		697E78E04A5E3C03839F3FBF /* Pods_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F718E5E62C4D19C75B285B02 /* Pods_UITests.framework */; };
+		C2F613767B2D7CF81F4C49D4 /* Pods_Stopwatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C4A74388656EC9BAA0A9FE2 /* Pods_Stopwatch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,13 +82,8 @@
 		5C0F596B225FCFF900DB3777 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		5C0F596D225FD87500DB3777 /* GlobalNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalNav.swift; sourceTree = "<group>"; };
 		5C2D475B2259FED700EB9EBB /* Stopwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stopwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-<<<<<<< HEAD
-		5C2D475E2259FED700EB9EBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5C2D47602259FED700EB9EBB /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
-=======
 		5C2D475E2259FED700EB9EBB /* EntryPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryPoint.swift; sourceTree = "<group>"; };
-		5C2D47602259FED700EB9EBB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
->>>>>>> master
+		5C2D47602259FED700EB9EBB /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
 		5C2D47662259FED700EB9EBB /* Stopwatch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stopwatch.xcdatamodel; sourceTree = "<group>"; };
 		5C2D47682259FEDA00EB9EBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C2D476D2259FEDA00EB9EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -122,6 +118,7 @@
 		5CFE5652225C7ACA008D30E6 /* format */ = {isa = PBXFileReference; lastKnownFileType = text; path = format; sourceTree = "<group>"; };
 		66B3EDD931C564237529A0D3 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6BEF1A3ABF8C5866F543C721 /* Pods-Stopwatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stopwatch.debug.xcconfig"; path = "Target Support Files/Pods-Stopwatch/Pods-Stopwatch.debug.xcconfig"; sourceTree = "<group>"; };
+		6C4A74388656EC9BAA0A9FE2 /* Pods_Stopwatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stopwatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96AD90ABA781A131DE8D5D7B /* Pods-UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITests.debug.xcconfig"; path = "Target Support Files/Pods-UITests/Pods-UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AFB9CB7FF24ED83649631EC0 /* Pods-UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UITests.release.xcconfig"; path = "Target Support Files/Pods-UITests/Pods-UITests.release.xcconfig"; sourceTree = "<group>"; };
 		C03CBB96B038202E15986CBA /* Pods_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2F613767B2D7CF81F4C49D4 /* Pods_Stopwatch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +315,7 @@
 			children = (
 				F718E5E62C4D19C75B285B02 /* Pods_UITests.framework */,
 				C03CBB96B038202E15986CBA /* Pods_Tests.framework */,
+				6C4A74388656EC9BAA0A9FE2 /* Pods_Stopwatch.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
