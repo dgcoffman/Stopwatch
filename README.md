@@ -39,11 +39,11 @@ Unit tests are written with [Quick](https://github.com/Quick/Quick), a BDD-style
 
 Quick comes with [Nimble](https://github.com/Quick/Nimble), a set of test matchers.
 
-**UI Tests**
+**UI tests**
 
 Execute `Scripts/uitest` to run UI tests.
 
-**Continuous Integration**
+**Continuous integration**
 
 CircleCI [![CircleCI](https://circleci.com/gh/dgcoffman/Stopwatch/tree/master.svg?style=svg)](https://circleci.com/gh/dgcoffman/Stopwatch/tree/master) runs four jobs in parallel:
 
@@ -53,6 +53,14 @@ CircleCI [![CircleCI](https://circleci.com/gh/dgcoffman/Stopwatch/tree/master.sv
 - UITest: Verifies that UI tests pass.
 
 UnitTest and UITest both use `xcodebuild test`, with [xcbeautify](https://github.com/thii/xcbeautify) to produce attractive, human-readable output. The human-readable output is _not_ used to to inform CircleCI of test results -- intead [trainer](https://github.com/xcpretty/trainer) produces a JUnit formatted XML file from the TestSummaries.plist file that `xcodebuild test` produces.
+
+**Generating Screenshots**
+
+Run `bundle exec fastlane screenshots`.
+
+**Submitting to the app store**
+
+Run `bundle exec fastlane deliver`.
 
 **Things I tried but didn't go with**
 
