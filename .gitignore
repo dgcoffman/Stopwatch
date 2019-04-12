@@ -4,3 +4,5 @@ TestResults
 DerivedData
 xcuserdata
 Pods/SwiftLint/
+screenshots
+fastlane/report.xml
