@@ -52,8 +52,8 @@ class Table: UITableViewController {
         return dataSource.count
     }
 
-    override func tableView(_ tableView: UITableView,
-                            heightForRowAt indexPath: IndexPath) -> CGFloat {
+    override func tableView(_: UITableView,
+                            heightForRowAt _: IndexPath) -> CGFloat {
         return 60
     }
 
