@@ -1,8 +1,29 @@
 xcdebugger
 build
-TestResults
 DerivedData
+
+# Produced by xcodebuild test runs
+TestResults
+
+# User-specific data and configuratio
 xcuserdata
+
+# Installed in docker image in CI
 Pods/SwiftLint/
+
+# fastlane specific
+**/fastlane/report.xml
+
+# deliver temporary files
+**/fastlane/Preview.html
+
+# snapshot generated screenshots
 screenshots
-fastlane/report.xml
+**/fastlane/screenshots
+
+# scan temporary files
+**/fastlane/test_output
+
+*.ipa
+
+*.zip

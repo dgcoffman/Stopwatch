@@ -1,3 +1,4 @@
+
 // This file contains the fastlane.tools configuration
 // You can find the documentation at https://docs.fastlane.tools
 //
@@ -15,10 +16,15 @@ class Fastfile: LaneFile {
         uploadToAppStore(username: "dgcoffman@gmail.com", skipBinaryUpload: true, app: "dgc.Stopwatch")
     }
 
-    func deployLane(withOptions options: [String: String]?) {
-        if let submit = options?["submit"], submit == "true" {
-            // Only when submit is true
-        }
+    func releaseLane(withOptions options: [String: String]?) {
+        syncCodeSigning(
+            type: "appstore",
+            appIdentifier: ["dgc.Stopwatch"],
+            username: "dgcoffman@gmail.com",
+            gitUrl: "https://github.com/dgcoffman/Stopwatch"
+        )
         incrementBuildNumber(buildNumber: options?["build_number"])
+        buildApp(scheme: "Stopwatch")
+        uploadToAppStore(username: "dgcoffman@gmail.com", app: "dgc.Stopwatch")
     }
 }
