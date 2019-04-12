@@ -1,4 +1,5 @@
 #!/bin/bash
-swiftlint autocorrect Stopwatch Tests UITests
+
+./Pods/SwiftLint/swiftlint autocorrect Stopwatch Tests UITests
 
 ./Pods/SwiftFormat/CommandLineTool/swiftformat --exclude Pods .

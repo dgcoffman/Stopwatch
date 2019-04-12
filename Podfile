@@ -12,6 +12,7 @@ end
 
 pod 'SwiftFormat/CLI'
 pod 'xcbeautify'
+pod 'SwiftLint'
 
 target 'Stopwatch' do
     pod 'SnapKit', '~> 4.0.0'

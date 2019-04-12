@@ -1,5 +1,5 @@
 #!/bin/bash
 
-swiftlint lint Stopwatch Tests UITests
+./Pods/SwiftLint/swiftlint lint Stopwatch Tests UITests
 
 ./Pods/SwiftFormat/CommandLineTool/swiftformat --lint --verbose --exclude Pods .

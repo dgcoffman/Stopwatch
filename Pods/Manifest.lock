@@ -3,6 +3,7 @@ PODS:
   - Quick (2.0.0)
   - SnapKit (4.0.1)
   - SwiftFormat/CLI (0.40.4)
+  - SwiftLint (0.31.0)
   - xcbeautify (0.3.7)
 
 DEPENDENCIES:
@@ -10,6 +11,7 @@ DEPENDENCIES:
   - Quick
   - SnapKit (~> 4.0.0)
   - SwiftFormat/CLI
+  - SwiftLint
   - xcbeautify
 
 SPEC REPOS:
@@ -18,6 +20,7 @@ SPEC REPOS:
     - Quick
     - SnapKit
     - SwiftFormat
+    - SwiftLint
     - xcbeautify
 
 SPEC CHECKSUMS:
@@ -25,8 +28,9 @@ SPEC CHECKSUMS:
   Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   SwiftFormat: cc36377840cffa5d0634782875dccf34dc02ff39
+  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
   xcbeautify: fda9f094001087791387ca8946e13aeead5a1705
 
-PODFILE CHECKSUM: 9b2ccce0c98f138b71672a2b1ad9807a37b5e30c
+PODFILE CHECKSUM: 97387b0de0b6d7bc6fa9e0f2e2046371d1c00694
 
 COCOAPODS: 1.6.1

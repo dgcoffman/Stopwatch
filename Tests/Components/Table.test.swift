@@ -4,7 +4,7 @@ import Quick
 @testable import Stopwatch
 
 class DataSourceMock: TableDataSource {
-    func at(index: Int) -> TableRowData? {
+    func at(index _: Int) -> TableRowData? {
         return nil
     }
 
