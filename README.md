@@ -2,18 +2,7 @@
 
 The world's most over-engineered stopwatch app for iOS.
 
-I'm learning:
-
-- Swift
-- UIKit
-- SwiftLint
-- SwiftFormat
-- CocoaPods
-- Swift unit testing with Quick and Nimble
-- SnapKit
-- xcodebuild
-- ~~xcpretty~~ xcbeautify
-- CircleCI for iOS builds
+![alt text](https://i.imgur.com/vBqaJmg.png)
 
 ---
 
