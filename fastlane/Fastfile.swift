@@ -9,9 +9,16 @@
 import Foundation
 
 class Fastfile: LaneFile {
-	func screenshotsLane() {
-	desc("Generate new localized screenshots")
-		captureScreenshots(workspace: "StopwatchApp.xcworkspace", scheme: "UITests")
-		uploadToAppStore(username: "dgcoffman@gmail.com", skipBinaryUpload: true, app: "dgc.Stopwatch")
-	}
+    func screenshotsLane() {
+        desc("Generate new localized screenshots")
+        captureScreenshots(workspace: "StopwatchApp.xcworkspace", scheme: "UITests")
+        uploadToAppStore(username: "dgcoffman@gmail.com", skipBinaryUpload: true, app: "dgc.Stopwatch")
+    }
+
+    func deployLane(withOptions options: [String: String]?) {
+        if let submit = options?["submit"], submit == "true" {
+            // Only when submit is true
+        }
+        incrementBuildNumber(buildNumber: options?["build_number"])
+    }
 }
