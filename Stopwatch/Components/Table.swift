@@ -52,6 +52,11 @@ class Table: UITableViewController {
         return dataSource.count
     }
 
+    override func tableView(_: UITableView,
+                            heightForRowAt _: IndexPath) -> CGFloat {
+        return 60
+    }
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> Table.Row {
         guard
             let dataPoint = dataSource.lastItem,
@@ -80,13 +85,15 @@ extension Table {
             rowContainer.axis = .horizontal
             rowContainer.distribution = .equalSpacing
 
+            leftContent.font = UIFont(name: "AvenirNext-Medium", size: 16)!
+            rightContent.font = UIFont(name: "AvenirNext-DemiBold", size: 20)!
             contentView.addSubview(rowContainer)
 
             rowContainer.snp.makeConstraints { (make) -> Void in
                 make.top.equalTo(contentView.snp.top)
                 make.bottom.equalTo(contentView.snp.bottom)
-                make.left.equalTo(contentView.snp.left)
-                make.right.equalTo(contentView.snp.right)
+                make.left.equalTo(contentView.snp.left).offset(24)
+                make.right.equalTo(contentView.snp.right).offset(-24)
             }
         }
 

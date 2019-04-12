@@ -123,7 +123,7 @@ class StopwatchView: UIViewController {
 
         layout.snp.makeConstraints { (make) -> Void in
             make.top.equalTo(view.snp.top)
-            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-24)
             make.left.equalTo(view.snp.left)
             make.right.equalTo(view.snp.right)
             make.centerX.equalTo(view.snp.centerX)
