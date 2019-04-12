@@ -3,6 +3,7 @@ import XCTest
 class UITests: XCTestCase {
     override func setUp() {
         let app = XCUIApplication()
+        setupSnapshot(app)
         app.launch()
     }
 
@@ -12,6 +13,8 @@ class UITests: XCTestCase {
         let lapButton = app.buttons["lapButton"]
         let resetButton = app.buttons["resetButton"]
         let timeLabel = app.staticTexts["elapsedTimeDisplay"]
+
+        snapshot("0Launch")
 
         // Verify initial state
         XCTAssertEqual(startStopButton.label, "Start")

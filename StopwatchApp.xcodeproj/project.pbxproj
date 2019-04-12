@@ -24,6 +24,8 @@
 		5C4860A1225BC58500F0424F /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4860A0225BC58500F0424F /* Button.swift */; };
 		5C4860A3225BCD3600F0424F /* ElapsedTimeDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4860A2225BCD3600F0424F /* ElapsedTimeDisplay.swift */; };
 		5C4860A5225BD08000F0424F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5C4860A4225BD07F00F0424F /* Podfile */; };
+		5C48FFAC22610C6500A41B4B /* Snapfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C48FFAA22610C6500A41B4B /* Snapfile.swift */; };
+		5C48FFAD22610C8100A41B4B /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C48FFA922610C6400A41B4B /* SnapshotHelper.swift */; };
 		5C7D22C0225D3EBD00149A5A /* Pods_UITests.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F718E5E62C4D19C75B285B02 /* Pods_UITests.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5C7D22C3225D3FBD00149A5A /* Stopwatch.uitest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7D22C1225D3FBD00149A5A /* Stopwatch.uitest.swift */; };
 		5C7D22C5225D482F00149A5A /* unittest in Resources */ = {isa = PBXBuildFile; fileRef = 5C7D22C4225D482F00149A5A /* unittest */; };
@@ -98,6 +100,8 @@
 		5C4860A0225BC58500F0424F /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		5C4860A2225BCD3600F0424F /* ElapsedTimeDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElapsedTimeDisplay.swift; sourceTree = "<group>"; };
 		5C4860A4225BD07F00F0424F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5C48FFA922610C6400A41B4B /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		5C48FFAA22610C6500A41B4B /* Snapfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Snapfile.swift; path = fastlane/Snapfile.swift; sourceTree = "<group>"; };
 		5C7D22B4225D3C9A00149A5A /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C7D22B8225D3C9A00149A5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C7D22C1225D3FBD00149A5A /* Stopwatch.uitest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.uitest.swift; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 		5C2D47522259FED700EB9EBB = {
 			isa = PBXGroup;
 			children = (
+				5C48FFAA22610C6500A41B4B /* Snapfile.swift */,
 				5C944917225D69480071B966 /* Gemfile */,
 				5C898D38225CA9860058D191 /* .swift-version */,
 				5CFE5651225C7AA7008D30E6 /* Scripts */,
@@ -225,6 +230,7 @@
 		5C7D22B5225D3C9A00149A5A /* UITests */ = {
 			isa = PBXGroup;
 			children = (
+				5C48FFA922610C6400A41B4B /* SnapshotHelper.swift */,
 				5C7D22B8225D3C9A00149A5A /* Info.plist */,
 				5C7D22C1225D3FBD00149A5A /* Stopwatch.uitest.swift */,
 			);
@@ -606,6 +612,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C2D47612259FED700EB9EBB /* StopwatchView.swift in Sources */,
+				5C48FFAC22610C6500A41B4B /* Snapfile.swift in Sources */,
 				5C4860A1225BC58500F0424F /* Button.swift in Sources */,
 				5C2D47672259FED700EB9EBB /* Stopwatch.xcdatamodeld in Sources */,
 				5C0F596C225FCFF900DB3777 /* TimerView.swift in Sources */,
@@ -640,6 +647,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C7D22C3225D3FBD00149A5A /* Stopwatch.uitest.swift in Sources */,
+				5C48FFAD22610C8100A41B4B /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
