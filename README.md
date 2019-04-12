@@ -19,9 +19,14 @@ I'm learning:
 
 ***Getting Starting***
 
+First, you'll want a working Ruby environment. That may mean [installing RVM](https://rvm.io/rvm/install).
+
+You'll also want the latest [git](https://git-scm.com/downloads).
+
 1. Clone this repo `git clone git@github.com:dgcoffman/Stopwatch.git && cd Stopwatch`
 2. [Install CocoaPods](https://guides.cocoapods.org/using/getting-started.html#installation) `sudo gem install cocoapods`
 3. Install this project's dependencies `pod install`
+4. Install [bundler](https://bundler.io/) `gem install bundler` -- *you may need to sudo this*
 4. Install [trainer](https://github.com/xcpretty/trainer) `bundle install`
 5. You're done. Open `StopWatchApp.xcworkspace` in Xcode, or run the scripts below.
 
