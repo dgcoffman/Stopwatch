@@ -2,4 +2,4 @@
 
 swiftlint lint Stopwatch Tests UITests
 
-./Pods/SwiftFormat/CommandLineTool/swiftformat --lint --verbose --exclude Pods ..
+./Pods/SwiftFormat/CommandLineTool/swiftformat --lint --verbose --exclude Pods .
