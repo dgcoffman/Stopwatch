@@ -2,4 +2,4 @@
 
 ./Pods/SwiftLint/swiftlint autocorrect Stopwatch Tests UITests
 
-./Pods/SwiftFormat/CommandLineTool/swiftformat --exclude Pods .
+./Pods/SwiftFormat/CommandLineTool/swiftformat --exclude Pods,fastlane .
