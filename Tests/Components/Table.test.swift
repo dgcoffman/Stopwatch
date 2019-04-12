@@ -4,6 +4,10 @@ import Quick
 @testable import Stopwatch
 
 class DataSourceMock: TableDataSource {
+    func at(index _: Int) -> TableRowData? {
+        return nil
+    }
+
     private(set) var cleared = false
 
     func clear() {

@@ -13,6 +13,8 @@ class StopwatchView: UIViewController {
         let button = Button(text: "Start")
         button.addTarget(self, action: #selector(startStopwatch), for: .touchUpInside)
         button.accessibilityIdentifier = "startStopButton" // put this in the constructor
+        button.backgroundColor = UIColor.green
+        button.setTitleColor(UIColor.black, for: .normal)
         return button
     }()
 
@@ -58,11 +60,13 @@ class StopwatchView: UIViewController {
     private func handleStart() {
         replaceButtonTarget(withAction: #selector(stopStopwatch))
         startStopButton.setTitle("Stop", for: .normal)
+        startStopButton.backgroundColor = UIColor.red
     }
 
     private func handleStop() {
         replaceButtonTarget(withAction: #selector(startStopwatch))
         startStopButton.setTitle("Start", for: .normal)
+        startStopButton.backgroundColor = UIColor.green
     }
 
     private func handleTick(elapsed: TimeInterval) {
@@ -116,13 +120,13 @@ class StopwatchView: UIViewController {
         let layout = UIStackView(arrangedSubviews: [elapsedLabel, laps.tableView, buttonContainer])
         layout.translatesAutoresizingMaskIntoConstraints = false
         layout.axis = .vertical
-        layout.distribution = .fillEqually
+        layout.distribution = .fillProportionally
         layout.alignment = .center
 
         view.addSubview(layout)
 
         layout.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(view.snp.top)
+            make.top.equalTo(view.snp.top).offset(48)
             make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-24)
             make.left.equalTo(view.snp.left)
             make.right.equalTo(view.snp.right)
@@ -134,6 +138,7 @@ class StopwatchView: UIViewController {
             make.bottom.equalTo(buttonContainer.snp.top)
             make.left.equalTo(view.snp.left)
             make.right.equalTo(view.snp.right)
+            make.height.greaterThanOrEqualTo(200)
         }
 
         buttonContainer.snp.makeConstraints { (make) -> Void in
@@ -141,15 +146,15 @@ class StopwatchView: UIViewController {
         }
 
         startStopButton.snp.makeConstraints { (make) -> Void in
-            make.height.equalTo(100)
+            make.height.equalTo(80)
         }
 
         resetButton.snp.makeConstraints { (make) -> Void in
-            make.height.equalTo(100)
+            make.height.equalTo(80)
         }
 
         lapButton.snp.makeConstraints { (make) -> Void in
-            make.height.equalTo(100)
+            make.height.equalTo(80)
         }
     }
 }

@@ -11,12 +11,14 @@ import UIKit
 protocol TableRowData {
     func getLeftContent() -> String
     func getRightContent() -> String
+    var isBest: Bool { get }
+    var isWorst: Bool { get }
 }
 
 protocol TableDataSource {
     func clear()
     var count: Int { get }
-    var lastItem: TableRowData? { get }
+    func at(index: Int) -> TableRowData?
 }
 
 class Table: UITableViewController {
@@ -33,9 +35,15 @@ class Table: UITableViewController {
 
     internal func reRender() {
         let indexPath = IndexPath(row: 0, section: 0) // Always insert the row at the top of the table
+
+        CATransaction.begin()
+        CATransaction.setCompletionBlock {
+            self.tableView.reloadData()
+        }
         tableView.beginUpdates()
         tableView.insertRows(at: [indexPath], with: .automatic)
         tableView.endUpdates()
+        CATransaction.commit()
     }
 
     func clear() {
@@ -58,13 +66,25 @@ class Table: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> Table.Row {
+        let index = indexPath.row
+
         guard
-            let dataPoint = dataSource.lastItem,
+            let dataPoint = dataSource.at(index: index),
             let cell = tableView.dequeueReusableCell(withIdentifier: "Row", for: indexPath as IndexPath) as? Table.Row
         else { fatalError() }
 
         cell.leftContent.text = dataPoint.getLeftContent()
         cell.rightContent.text = dataPoint.getRightContent()
+
+        if dataSource.count > 1 {
+            if dataPoint.isBest {
+                cell.rightContent.textColor = UIColor.green
+            } else if dataPoint.isWorst {
+                cell.rightContent.textColor = UIColor.red
+            } else {
+                cell.rightContent.textColor = UIColor.black
+            }
+        }
 
         return cell
     }

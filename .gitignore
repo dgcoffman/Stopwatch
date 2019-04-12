@@ -2,3 +2,5 @@ xcdebugger
 build
 TestResults
 DerivedData
+xcuserdata
+Pods/SwiftLint/
