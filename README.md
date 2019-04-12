@@ -43,9 +43,9 @@ Quick comes with [Nimble](https://github.com/Quick/Nimble), a set of test matche
 
 Execute `Scripts/uitest` to run UI tests.
 
-**Continuous integration**
+**Continuous integration**  [![CircleCI](https://circleci.com/gh/dgcoffman/Stopwatch/tree/master.svg?style=svg)](https://circleci.com/gh/dgcoffman/Stopwatch/tree/master) 
 
-CircleCI [![CircleCI](https://circleci.com/gh/dgcoffman/Stopwatch/tree/master.svg?style=svg)](https://circleci.com/gh/dgcoffman/Stopwatch/tree/master) runs four jobs in parallel:
+CircleCI runs four jobs in parallel:
 
 - SwiftFormat: Verifies that running SwiftFormat would introduce no changes (so the code has already been formatted correctly).
 - SwiftLint: Verifies that the code is compliant with SwiftLint rules.
