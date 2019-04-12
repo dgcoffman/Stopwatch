@@ -17,6 +17,15 @@ I'm learning:
 
 ---
 
+***Getting Starting***
+
+1. Clone this repo `git clone git@github.com:dgcoffman/Stopwatch.git && cd Stopwatch`
+2. [Install CocoaPods](https://guides.cocoapods.org/using/getting-started.html#installation) `sudo gem install cocoapods`
+3. Install this project's dependencies `pod install`
+4. Install [trainer](https://github.com/xcpretty/trainer) `bundle install`
+5. You're done. Open `StopWatchApp.xcworkspace` in Xcode, or run the scripts below.
+
+
 **_What's happening here?_**
 
 **Formatting code**
@@ -61,7 +70,7 @@ UnitTest and UITest both use `xcodebuild test`, with [xcbeautify](https://github
 7. I started out running `pod install` in CI, and it took FOREVER, so I figured out how to [fetch CocoaPods Specs from CircleCI's S3 bucket](https://github.com/dgcoffman/Stopwatch/commit/85d26add617461f3732f1613dcd2354aa60e78ff). But in the end, I just checked in all my pods and stopped running `pod install` entirely!
 8. If you `brew install` something in a Circle job, Homebrew will try to update itself first! You can disable that to save time: https://github.com/dgcoffman/Stopwatch/commit/3dce2977c58acba7bc03515dd7c1c978a5b47b73
 9. I tried making an entirely distinct target and scheme specifically to disable warnings from the Swift compiler for CI builds -- but it didn't work at all!! So I removed it. https://github.com/dgcoffman/Stopwatch/commit/7fd60cc82cb3d2db87ce1ac389b43aaf8589a2cf
-10. I tried using xcpretty to JUnit format the xcodebuild output to produce a test report that Circle can read, but ultimately went with trainer for producing machine-readable JUnit-formatted XML. I think this is better.
+10. I tried using xcpretty to JUnit format the xcodebuild output to produce a test report that Circle can read, but ultimately went with [trainer](https://github.com/xcpretty/trainer) for producing machine-readable JUnit-formatted XML. I think this is better.
 
 **Other stuff I figured out**
 
