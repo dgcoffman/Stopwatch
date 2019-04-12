@@ -120,7 +120,7 @@ class StopwatchView: UIViewController {
         let layout = UIStackView(arrangedSubviews: [elapsedLabel, laps.tableView, buttonContainer])
         layout.translatesAutoresizingMaskIntoConstraints = false
         layout.axis = .vertical
-        layout.distribution = .fillEqually
+        layout.distribution = .fillProportionally
         layout.alignment = .center
 
         view.addSubview(layout)
@@ -138,6 +138,7 @@ class StopwatchView: UIViewController {
             make.bottom.equalTo(buttonContainer.snp.top)
             make.left.equalTo(view.snp.left)
             make.right.equalTo(view.snp.right)
+            make.height.greaterThanOrEqualTo(200)
         }
 
         buttonContainer.snp.makeConstraints { (make) -> Void in
