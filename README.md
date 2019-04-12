@@ -12,6 +12,7 @@ First, you'll want a working Ruby environment. That may mean [installing RVM](ht
 
 You'll also want the latest [git](https://git-scm.com/downloads).
 
+0. Install the latest Xcode tools `xcode-select --install` 
 1. Clone this repo `git clone git@github.com:dgcoffman/Stopwatch.git && cd Stopwatch`
 2. [Install CocoaPods](https://guides.cocoapods.org/using/getting-started.html#installation) `sudo gem install cocoapods`
 3. Install this project's dependencies `pod install`
