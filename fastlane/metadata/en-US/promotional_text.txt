@@ -1,0 +1,1 @@
+This is the simplest and most reliable stopwatch app available.
