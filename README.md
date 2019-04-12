@@ -60,7 +60,9 @@ Run `bundle exec fastlane screenshots`.
 
 **Submitting to the app store**
 
-Run `bundle exec fastlane deliver`.
+Run `bundle exec fastlane release`.
+
+To edit the fastlane configuration, open `fastlane/swift/FastlaneSwiftRunner/FastlaneSwiftRunner.xcodeproj` 
 
 **Things I tried but didn't go with**
 
