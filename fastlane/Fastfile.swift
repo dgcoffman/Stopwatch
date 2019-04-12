@@ -12,6 +12,6 @@ class Fastfile: LaneFile {
 	func screenshotsLane() {
 	desc("Generate new localized screenshots")
 		captureScreenshots(workspace: "StopwatchApp.xcworkspace", scheme: "UITests")
-		uploadToAppStore(username: "dgcoffman@gmail.com", app: "dgc.Stopwatch", skipBinaryUpload: true, skipMetadata: true)
+		uploadToAppStore(username: "dgcoffman@gmail.com", skipBinaryUpload: true, app: "dgc.Stopwatch")
 	}
 }
